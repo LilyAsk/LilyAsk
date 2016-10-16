@@ -14,9 +14,10 @@ img {
 #topbar {
 	width: 100%;
 	height: 50px;
+    text-align: center;
 	background-image: -webkit-linear-gradient(90deg, #53e3a6, #53e3a2);
 	background-image: linear-gradient(90deg, #53e3a6, #53e3a2);
-	box-shadow: 0px 0px 3px 1px black;
+	box-shadow: 1px 1px 5px 1px #0a6a41;
 	position: fixed;
 	left: 0px;
 	top: 0px;
@@ -117,6 +118,10 @@ img {
 	margin-top: 0px;
 	margin-left: -40px;
 }
+#downBar li:hover{
+    background-color: #53e3a6;
+}
+
 #myHome {
 	width: 120px;
 	height: 50px;
@@ -156,92 +161,19 @@ img {
 #questiontxt {
 	margin-right: 97px;
 }
+#questiontxt:visited {
+    color: white;
+    text-decoration: none;
+}
+#questiontxt:link{
+    color: white;
+    text-decoration: none;
+}
 #usertxt {
 	margin-right: 11px;
 }
 
 
-
-
-/*.top_nav{
-    width: 100%;
-    height: 50px;
-    background: linear-gradient(to bottom right,#52c5a4 0%,#53e3a6 100%);
-    position: fixed;
-    top:0;
-    left:0;
-}
-.nav_content{
-    width: 960px;
-    margin: 0 auto;
-}
-#logo{
-    float: left;
-    font-size: 35px;
-    color: white;
-}
-
-#ask_button{
-    font-size: 28px;
-    background-color: transparent;
-    border-color: transparent;
-    color: white;
-    float: right;
-    margin: 5px;
-}
-#ask_img{
-    width: 40px;
-    hight: 40px;
-    float: right;
-    bottom: 2px;
-    margin: 5px;
-}
-
-#account,#account li ul{
-    list-style-type:none;
-    float: right;
-    padding:0;
-    margin:0;
-    color:white;
-    font-size:28px;
-}
-#account li {
-    color: white;
-    text-align:center;
-    position:relative;
-}
-#account li ul li a:link, #account li ul li a:visited {
-    display:block;
-    text-decoration:none;
-    color:white;
-    border:1px solid #fff;
-    border-width:1px 1px 0 0;
-    background-color:RGB(83,218,166);
-}
-#account li ul {
-    display:none;
-    position:absolute;
-    margin: 0;
-    width:100%;
-}
-#account li ul li a:hover {
-    background:#53e3a6;
-}
-#account_nav{
-    display: block;
-    border: 0;
-    color:white;
-    font-size:28px;
-    text-decoration:none;
-    border:1px solid RGB(83,218,166);
-}
-#login_img{
-    padding-top: 2px;
-    padding-right: 2px;
-    width: 38px;
-    hight: 38px;
-    border: 0;
-}*/
 
 .page_content{
     width: 960px;
@@ -249,12 +181,12 @@ img {
     margin-top: 150px;
 }
 #left_side{
-    width: 75%;
+    width: 72.5%;
     clear: left;
 }
 #left_side_description{
     float: left;
-     width: 70%;
+     width: 67%;
  }
 #list_img{
     width: 38px;
