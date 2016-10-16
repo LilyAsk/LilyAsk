@@ -1,0 +1,536 @@
+* {
+    font-family: "微软雅黑 Light";
+}
+
+body {
+	left: 0;
+	top: 0;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+}
+
+
+#main {
+	min-width: 960px;
+	margin: 9% auto 9% auto;
+	text-align: center;
+	z-index: 1;
+}
+
+#main h1 {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+    font-size: 75px;
+    color: #53e3a6;
+    letter-spacing: 8px;
+}
+
+.logo {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#main p {
+    font-size: 17px;
+    font-family: 仿宋;
+	margin-top: -40px;
+	margin-bottom: 57px;
+}
+
+#section {
+	width: 300px;
+	margin: auto;
+}
+
+#section a {
+    padding-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+	font-size: 23px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#section span {
+    width: 50px;
+    height: 5px;
+    margin-top: 5px;
+    background-color: #53e3a6;
+    position: relative;
+    display: block;
+	margin-left: 60px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+
+
+
+.frame {
+	z-index: 0;
+	display: block;
+	border-radius: 9px;
+	border-style: solid;
+	margin-top: 30px;
+	width: 216px;
+	height: 36px;
+	vertical-align: middle;
+	font-family: 微软雅黑;
+	font-size: 20px;
+	padding-left: 42px;
+	margin-left: -22px;
+}
+
+#log input[type="text"]:focus {
+	border-color: #53e3a6;
+	outline: medium;
+}
+#log input[type="text"]:hover {
+	box-shadow: 0px 0px 10px #53e3a6;
+}
+#log input[type="password"]:focus {
+	border-color: #53e3a6;
+	outline: medium;
+}
+#log input[type="password"]:hover {
+	box-shadow: 0px 0px 10px #53e3a6;
+}
+
+
+
+#log form {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 216px;
+    height: 36px;
+}
+
+/*#usr{*/
+	/*position: relative;*/
+	/*margin-left: auto;*/
+	/*margin-right: auto;*/
+	/*width: 216px;*/
+	/*height: 36px;*/
+/*}*/
+/*#key{*/
+	/*position: relative;*/
+	/*margin-left: auto;*/
+	/*margin-right: auto;*/
+	/*width: 216px;*/
+	/*height: 36px;*/
+/*}*/
+#password, #passwordSee {
+	width: 176px;
+	padding-right: 40px;
+}
+
+
+
+#login {
+	display: block;
+	border-radius: 9px;
+	border-style: none;
+	background-color: #53e3a6;
+	color: white;
+	font-size: 23px;
+	width: 246px;
+	height: 36px;
+	margin: 30px auto 30px auto;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+#log button:hover {
+	background-color: #53e383;
+	box-shadow: 0px 0px 10px #53e3a6;
+}
+#log button:active {
+	background-color: #53e3a6;
+	outline: medium;
+}
+#log button:focus {
+	outline: medium;
+}
+
+
+#img1 {
+    position: absolute;
+    z-index: 1;
+    margin-top: -36px;
+    margin-left: -120px;
+}
+#img2 {
+    position: absolute;
+    z-index: 1;
+    margin-top: -36px;
+    margin-left: -120px;
+}
+
+#see {
+	position: absolute;
+	z-index: 1;
+	margin-top: -36px;
+	margin-left: 94px;
+}
+
+
+
+#regis form label{
+    font-family: "微软雅黑";
+    display: block;
+    position: relative;
+    font-size: 19px;
+    margin-left: -250px;
+    margin-top: 36px;
+    font-weight: 600;
+}
+
+#regis {
+	width: 300px;
+	margin: auto;
+}
+#regis form{
+	vertical-align: middle;
+    position: relative;
+}
+
+#regis .normal input{
+	width: 210px;
+	height: 36px;
+	border-radius: 9px;
+	border-style: solid;
+	position: absolute;
+	margin-top: -32px;
+	margin-left: -90px;
+    font-family: 微软雅黑;
+    font-size: 20px;
+    padding-left: 6px;
+}
+
+
+.abnormal #chp, #cht {
+    width: 170px;
+    height: 36px;
+    border-radius: 9px;
+    border-style: solid;
+    margin-top: -32px;
+    margin-left: 60px;
+    position: absolute;
+    padding-right: 40px;
+    font-family: 微软雅黑;
+    font-size: 20px;
+    padding-left: 6px;
+}
+
+#regisee{
+    position: absolute;
+    z-index: 1;
+    margin-top: -26px;
+    margin-left: 93px;
+}
+
+
+#registerbtn{
+	display: block;
+	border-radius: 9px;
+	border-style: none;
+	background-color: #53e3a6;
+	color: white;
+	font-size: 23px;
+	width: 246px;
+	height: 36px;
+	margin: 30px auto 30px auto;
+	vertical-align: middle;
+	cursor: pointer;
+}
+#regis button:hover {
+	background-color: #53e383;
+    box-shadow: 0px 0px 10px #53e3a6;
+}
+#regis button:active {
+	background-color: #53e3a6;
+	outline: medium;
+}
+#regis button:focus {
+	outline: medium;
+}
+
+#regis input[type="text"]:focus {
+	border-color: #53e3a6;
+	outline: medium;
+}
+#regis input[type="text"]:hover {
+    box-shadow: 0px 0px 10px #53e3a6;
+}
+#regis input[type="password"]:focus {
+	border-color: #53e3a6;
+	outline: medium;
+}
+#regis input[type="password"]:hover {
+    box-shadow: 0px 0px 10px #53e3a6;
+}
+
+
+/*以下是question.html的样式*/
+#content {
+	min-width: 960px;
+	margin: auto;
+	text-align: center;
+}
+
+#topbar {
+	width: 100%;
+	height: 50px;
+	background-image: -webkit-linear-gradient(90deg, #53e3a6, #53e3a2);
+	background-image: linear-gradient(90deg, #53e3a6, #53e3a2);
+	box-shadow: 0px 0px 3px 1px black;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+}
+
+#topbararea {
+	max-width: 960px;
+	height: 50px;
+	position: relative;
+	margin: auto;
+	display: block;
+	top: 0px;
+	/*background-color: #245eb2;*/
+}
+
+#toplogo {
+	position: relative;
+	color: white;
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-size: 2.2em;
+	float: left;
+}
+
+#righttopbar{
+	position: relative;
+	line-height: 50px;
+	/*text-align: center;*/
+	display: block;
+	/*margin-left: 570px;*/
+	float: right;
+	font-size: 1.5em;
+	font-weight: bold;
+	color: white;
+}
+
+
+
+#ques {
+	width: 120px;
+	height: 50px;
+	position: relative;
+	display: block;
+	float: right;
+	margin-right: 30px;
+	/*margin-top: 2px;*/
+}
+#ques img {
+	position: relative;
+	width: 30px;
+	height: 30px;
+	padding: 10px;
+	float: left;
+}
+#ques a{
+	position: relative;
+	margin-right: 10px;
+}
+#use {
+	width: 120px;
+	height: 50px;
+	position: relative;
+	display: block;
+	float: right;
+	/*margin-top: 2px;*/
+}
+#use a{
+	position: relative;
+	margin-right: 10px;
+}
+#use img {
+	width: 30px;
+	height: 30px;
+	padding: 10px;
+	float: left;
+}
+
+#ques:hover {
+	background-color: #31ce79;
+	cursor: pointer;
+}
+#ques:active {
+	background-color: #47ce6b;
+	border-top-style: none;
+	-webkit-box-shadow: inset 0px 0px 1px 2px lightgray;
+}
+#use:hover {
+	background-color: #31ce79;
+	cursor: pointer;
+}
+
+
+
+#downBar {
+	width: 120px;
+	height: 100px;
+	font-size: 0.7em;
+	margin-top: 0px;
+	margin-left: -40px;
+}
+#myHome {
+	width: 120px;
+	height: 50px;
+	background-color: #31ce79;
+	text-align: center;
+	border-top: solid 2px;
+	border-bottom: solid 1px;
+}
+#myHome img {
+	vertical-align: middle;
+}
+#myHome a{
+	margin-left: -8px;
+}
+#myHome:hover{
+	cursor: pointer;
+}
+#out {
+	width: 120px;
+	height: 50px;
+	background-color: #31ce79;
+	border-top: solid 1px;
+	border-bottom: solid 1px;
+}
+#out img {
+	vertical-align: middle;
+}
+#out a{
+	float: left;
+	margin-left: -8px;
+}
+#out:hover{
+	cursor: pointer;
+}
+
+
+#questiontxt {
+	margin-right: 97px;
+}
+#usertxt {
+	margin-right: 11px;
+}
+
+#questionArea {
+	display: block;
+	position: relative;
+	margin-top: 200px;
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#questionArea .tip {
+	position: relative;
+	display: block;
+	font-size: 1.5em;
+	font-weight: bold;
+	float: left;
+}
+#titleTip {
+	margin-bottom: 45px;
+}
+#describeTip {
+	margin-top: 150px;
+	margin-left: -169px;
+}
+
+#questionTitle {
+	display: block;
+	position: absolute;
+	float: left;
+	margin-top: 70px;
+	margin-bottom: 50px;
+	border-radius: 9px;
+	border-style: solid;
+	width: 484px;
+	height: 35px;
+	padding-left: 8px;
+	padding-right: 8px;
+	font-family: 微软雅黑;
+	font-size: 14px;
+}
+#questionTitle:hover {
+	box-shadow: 0px 0px 10px #53e3a6;
+}
+#questionTitle:focus {
+	border-color: #53e3a6;
+	outline: medium;
+}
+#questionDescribe {
+	display: block;
+	position: absolute;
+	float: left;
+	margin-top: 200px;
+	border-radius: 9px;
+	border-style: solid;
+	width: 484px;
+	height: 230px;
+	border-width: 2px;
+	border-color: black;
+	padding: 8px;
+	resize: none;
+	font-family: 微软雅黑;
+	font-size: 14px;
+}
+#questionDescribe:hover {
+	box-shadow: 0px 0px 10px #53e3a6;
+}
+#questionDescribe:focus {
+	border-color: #53e3a6;
+	outline: medium;
+}
+#button {
+	float: right;
+	margin-top: 490px;
+	margin-right: 90px;
+}
+#button a{
+	color: black;
+	font-weight: bold;
+	font-size: 1.2em;
+	position: relative;
+}
+#button button {
+	margin-left: 30px;
+	width: 120px;
+	height: 50px;
+	color: white;
+	background-color: #53e3a6;
+	border-style: none;
+	border-radius: 9px;
+	font-size: 1.5em;
+	font-weight: bold;
+	cursor: pointer;
+}
+#button button:hover{
+	background-color: #53e383;
+	box-shadow: 0px 0px 10px #53e3a6;
+}
+#button button:focus{
+	outline: medium;
+}
+#button button:active{
+	background-color: #53e3a6;
+	outline: medium;
+}

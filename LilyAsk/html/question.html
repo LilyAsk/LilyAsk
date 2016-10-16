@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>提问</title>
+    <link type="text/css" rel="stylesheet" href="../CSS/style.css">
+    <script type="text/javascript" src="../js/LilyAsk.js"></script>
+</head>
+<body>
+
+    <div id="content">
+        <div id="topbar">
+            <div id="topbararea">
+                <label id="toplogo">LilyAsk</label>
+                <div id="righttopbar">
+                    <form id="use" onmouseover="downUserInfo()" onmouseleave="upUserInfo()">
+                        <img id="pic2" src="../img/account.png">
+                        <a id="usertxt">User</a>
+                        <ul id="downBar" style="display: none">
+                            <li class="downMenu" id="myHome">
+                                <img src="../img/userLogo.png">
+                                <a>我的主页</a>
+                            </li>
+                            <li class="downMenu" id="out">
+                                <img src="../img/logout.png">
+                                <a>退出</a>
+                            </li>
+                        </ul>
+                    </form>
+                    <form id="ques">
+                        <img id="pic1" src="../img/question.png">
+                        <a id="questiontxt">提问</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="questionArea">
+            <p class="tip" id="titleTip">写下你的问题：</p>
+            <input type="text" id="questionTitle" maxlength="50">
+            <p class="tip" id="describeTip">问题说明：</p>
+            <textarea id="questionDescribe" placeholder="问题的详细描述..."></textarea>
+            <div id="button">
+                <a href="">返回</a>
+                <button type="submit">发布</button>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

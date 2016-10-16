@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LilyAsk</title>
+    <link type="text/css" rel="stylesheet" href="../CSS/style.css">
+    <script type="text/javascript" src="../js/LilyAsk.js"></script>
+</head>
+<body>
+
+<div id="main">
+
+    <h1 class="logo">LilyAsk</h1>
+    <p>面向南京大学师生的问答型社区</p>
+    
+    <nav id="section">
+        <a href="#log" id="loginbut" onclick="showLog()" style="color: #53e3a6">登录</a>
+        <a href="#regis" id="regisbut" onclick="showRegis()" style="color: gray">注册</a>
+        <span id="slider"></span>
+    </nav>
+
+    <div id="division">
+
+
+        <div id="log" style="display: block">
+            <form id="usr">
+                <input id="username" class="frame" type="text" maxlength="20">
+                <img src="../img/userLogo.png" id="img1">
+            </form>
+            <form id="key">
+                <input id="password" class="frame" type="password" maxlength="30" style="display: block">
+                <input id="passwordSee" class="frame" type="text" maxlength="30" style="display: none">
+                <img src="../img/passwordLogo.png" id="img2" style="cursor: pointer">
+                <img src="../img/cannotsee.png" id="see" style="cursor: pointer" onclick="changeCanSee()">
+            </form>
+
+            <button id="login" type="submit">登录</button>
+
+            <a href="">以游客身份登录</a>
+        </div>
+
+        <div id="regis" style="display: none">
+            <form class="normal">
+                <label>昵称</label>
+                <input type="text" maxlength="20">
+            </form>
+            <form class="normal">
+                <label>姓名</label>
+                <input type="text" maxlength="20">
+            </form>
+            <form class="normal">
+                <label>学号</label>
+                <input type="text" maxlength="20">
+            </form>
+            <form class="abnormal">
+                <label>密码</label>
+                <input id="chp" type="password" maxlength="30" style="display: block">
+                <input id="cht" type="text" maxlength="30" style="display: none">
+                <img src="../img/cannotsee.png" id="regisee" style="cursor: pointer" onclick="changeRegCanSee()">
+            </form>
+
+            <button type="submit" id="registerbtn">注册</button>
+        </div>
+    </div>
+
+</div>
+
+</body>
+
+</html>
