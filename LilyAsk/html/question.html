@@ -7,8 +7,9 @@
     <script type="text/javascript" src="../js/LilyAsk.js"></script>
 </head>
 <body>
-
     <div id="content">
+
+        <!-- navigation topbar -->
         <div id="topbar">
             <div id="topbararea">
                 <label id="toplogo">LilyAsk</label>
@@ -18,7 +19,7 @@
                         <a id="usertxt">User</a>
                         <ul id="downBar" style="display: none">
                             <li class="downMenu" id="myHome">
-                                <img src="../img/userLogo.png">
+                                <img src="../img/home.png">
                                 <a>我的主页</a>
                             </li>
                             <li class="downMenu" id="out">
@@ -34,19 +35,21 @@
                 </div>
             </div>
         </div>
+        <!-- End navigation topbar -->
 
+        <!-- ask question area -->
         <div id="questionArea">
             <p class="tip" id="titleTip">写下你的问题：</p>
             <input type="text" id="questionTitle" maxlength="50">
             <p class="tip" id="describeTip">问题说明：</p>
             <textarea id="questionDescribe" placeholder="问题的详细描述..."></textarea>
             <div id="button">
-                <a href="QuestionList.html">返回</a>
+                <a href="questionList.html">返回</a>
                 <button type="submit">发布</button>
             </div>
         </div>
+        <!-- End ask question area -->
 
     </div>
-
 </body>
 </html>

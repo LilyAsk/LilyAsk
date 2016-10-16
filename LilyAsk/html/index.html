@@ -10,18 +10,21 @@
 
 <div id="main">
 
+    <!-- LilyAsk Logo -->
     <h1 class="logo">LilyAsk</h1>
     <p>面向南京大学师生的问答型社区</p>
+    <!-- End LilyAsk Logo -->
 
+    <!-- choose login or register-->
     <nav id="section">
         <a href="#log" id="loginbut" onclick="showLog()" style="color: #53e3a6">登录</a>
         <a href="#regis" id="regisbut" onclick="showRegis()" style="color: gray">注册</a>
         <span id="slider"></span>
     </nav>
+    <!-- End choose login or register-->
 
+    <!-- Information form -->
     <div id="division">
-
-
         <div id="log" style="display: block">
             <form id="usr">
                 <input id="username" class="frame" type="text" maxlength="20">
@@ -36,9 +39,8 @@
 
             <button id="login" type="submit">登录</button>
 
-            <a href="QuestionList.html">以游客身份登录</a>
+            <a href="questionList.html">以游客身份登录</a>
         </div>
-
         <div id="regis" style="display: none">
             <form class="normal">
                 <label>昵称</label>
@@ -58,13 +60,12 @@
                 <input id="cht" type="text" maxlength="30" style="display: none">
                 <img src="../img/cannotsee.png" id="regisee" style="cursor: pointer" onclick="changeRegCanSee()">
             </form>
-
             <button type="submit" id="registerbtn">注册</button>
         </div>
     </div>
+    <!-- End Information form -->
 
 </div>
-
 </body>
 
 </html>
