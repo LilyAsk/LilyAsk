@@ -1,10 +1,15 @@
 * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+    /*-webkit-box-sizing: border-box;*/
+    /*-moz-box-sizing: border-box;*/
+    /*box-sizing: border-box;*/
     font-family: "微软雅黑 Light";
 }
 
+
+img {
+    width: 30px;
+    height: 30px;
+}
 
 #topbar {
 	width: 100%;
@@ -83,8 +88,8 @@
 	margin-right: 10px;
 }
 #use img {
-	width: 50px;
-	height: 50px;
+	width: 30px;
+	height: 30px;
 	padding: 10px;
 	float: left;
 }
@@ -96,7 +101,7 @@
 #ques:active {
 	background-color: #47ce6b;
 	border-top-style: none;
-	-webkit-box-shadow: inset 0px 0px 1px 2px lightgray;
+	box-shadow: inset 0px 0px 1px 2px lightgray;
 }
 #use:hover {
 	background-color: #31ce79;
@@ -312,7 +317,7 @@ hr{
     margin-left: 42px;
     margin-top: 0px;
     text-align:justify;            /* Mozilla Firefox等使用的两端对齐的方式 */
-    text-justify:inter-ideograph;  /* IE使用的两端对齐的方式 */
+    text-justify: inter-ideograph;  /* IE使用的两端对齐的方式 */
 }
 
 .question_description{
