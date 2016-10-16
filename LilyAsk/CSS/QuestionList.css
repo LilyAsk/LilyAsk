@@ -2,9 +2,163 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    font-family: "微软雅黑";
+    font-family: "微软雅黑 Light";
 }
-.top_nav{
+
+
+#topbar {
+	width: 100%;
+	height: 50px;
+	background-image: -webkit-linear-gradient(90deg, #53e3a6, #53e3a2);
+	background-image: linear-gradient(90deg, #53e3a6, #53e3a2);
+	box-shadow: 0px 0px 3px 1px black;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+}
+
+#topbararea {
+	max-width: 960px;
+	height: 50px;
+	position: relative;
+	margin: auto;
+	display: block;
+	top: 0px;
+	/*background-color: #245eb2;*/
+}
+
+#toplogo {
+	position: relative;
+	color: white;
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-size: 2.2em;
+	float: left;
+}
+
+#righttopbar{
+	position: relative;
+	line-height: 50px;
+	/*text-align: center;*/
+	display: block;
+	/*margin-left: 570px;*/
+	float: right;
+	font-size: 1.5em;
+	font-weight: bold;
+	color: white;
+}
+
+
+
+#ques {
+	width: 120px;
+	height: 50px;
+	position: relative;
+	display: block;
+	float: right;
+	margin-right: 30px;
+	/*margin-top: 2px;*/
+}
+#ques img {
+	position: relative;
+	width: 30px;
+	height: 30px;
+	padding: 10px;
+	float: left;
+}
+#ques a{
+	position: relative;
+	margin-right: 10px;
+}
+#use {
+	width: 120px;
+	height: 50px;
+	position: relative;
+	display: block;
+	float: right;
+	/*margin-top: 2px;*/
+}
+#use a{
+	position: relative;
+	margin-right: 10px;
+}
+#use img {
+	width: 50px;
+	height: 50px;
+	padding: 10px;
+	float: left;
+}
+
+#ques:hover {
+	background-color: #31ce79;
+	cursor: pointer;
+}
+#ques:active {
+	background-color: #47ce6b;
+	border-top-style: none;
+	-webkit-box-shadow: inset 0px 0px 1px 2px lightgray;
+}
+#use:hover {
+	background-color: #31ce79;
+	cursor: pointer;
+}
+
+
+
+#downBar {
+	width: 120px;
+	height: 100px;
+	font-size: 0.7em;
+	margin-top: 0px;
+	margin-left: -40px;
+}
+#myHome {
+	width: 120px;
+	height: 50px;
+	background-color: #31ce79;
+	text-align: center;
+	border-top: solid 2px;
+	border-bottom: solid 1px;
+}
+#myHome img {
+	vertical-align: middle;
+}
+#myHome a{
+	margin-left: -8px;
+}
+#myHome:hover{
+	cursor: pointer;
+}
+#out {
+	width: 120px;
+	height: 50px;
+	background-color: #31ce79;
+	border-top: solid 1px;
+	border-bottom: solid 1px;
+}
+#out img {
+	vertical-align: middle;
+}
+#out a{
+	float: left;
+	margin-left: -8px;
+}
+#out:hover{
+	cursor: pointer;
+}
+
+
+#questiontxt {
+	margin-right: 97px;
+}
+#usertxt {
+	margin-right: 11px;
+}
+
+
+
+
+/*.top_nav{
     width: 100%;
     height: 50px;
     background: linear-gradient(to bottom right,#52c5a4 0%,#53e3a6 100%);
@@ -82,7 +236,7 @@
     width: 38px;
     hight: 38px;
     border: 0;
-}
+}*/
 
 .page_content{
     width: 960px;

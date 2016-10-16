@@ -6,7 +6,6 @@ function showLog() {
     var show = document.getElementById("log");
     var hide = document.getElementById("regis");
     show.style.display="block";
-    show.value=hide.value;
     hide.style.display="none";
     var color = document.getElementById("loginbut");
     var gray = document.getElementById("regisbut");
@@ -20,7 +19,6 @@ function showRegis() {
     var show = document.getElementById("regis");
     var hide = document.getElementById("log");
     show.style.display="block";
-    show.value=hide.value;
     hide.style.display="none";
     var color = document.getElementById("regisbut");
     var gray = document.getElementById("loginbut");

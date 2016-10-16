@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>问题详情</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/QuestionList.css">
+    <!--<link type="text/css" rel="stylesheet" href="../CSS/style.css">-->
+    <script type="text/javascript" src="../js/LilyAsk.js"></script>
+</head>
+<body>
+    <!-- <nav class="top_nav">
+        <nav class="nav_content">
+            <nav id="logo">Lily Ask</nav>
+            <ul id="account">
+                <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                    <a href="" id="account_nav" ><img id="login_img" src="登录.png">客户</a>
+                    <ul>
+                        <li>
+                          <img src="../img/userLogo.png">
+                          <a href="">主页</a>
+                        </li>
+                        <li>
+                          <img src="../img/logout.png">
+                          <a href="">退出</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <button id="ask_button">提问</button>
+            <img id="ask_img" src="提问.png">
+        </nav>
+    </nav> -->
+
+
+
+    <div id="topbar">
+        <div id="topbararea">
+            <label id="toplogo">LilyAsk</label>
+            <div id="righttopbar">
+                <form id="use" onmouseover="downUserInfo()" onmouseleave="upUserInfo()">
+                    <img id="pic2" src="../img/account.png">
+                    <a id="usertxt">User</a>
+                    <ul id="downBar" style="display: none">
+                        <li class="downMenu" id="myHome">
+                            <img src="../img/userLogo.png">
+                            <a>我的主页</a>
+                        </li>
+                        <li class="downMenu" id="out">
+                            <img src="../img/logout.png">
+                            <a>退出</a>
+                        </li>
+                    </ul>
+                </form>
+                <form id="ques">
+                    <img id="pic1" src="../img/questionAsk.png">
+                    <a id="questiontxt">提问</a>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="page_content">
+        <div id="agree_side">
+            <div class="agree_background_in_description">
+                <a href=""><img id="agree_img" src="../img/agree.png"></a>
+                <div>666</div>
+            </div>
+
+            <div class="agree_background_in_description">
+                <a href=""><img id="disagree_img" src="../img/against.png"></a>
+                <div>233</div>
+            </div>
+
+
+        </div>
+        <div id="left_side_description">
+            <div class="question_title">如何健康增加体重</div>
+            <p class="question_description">本人每日膳食安排合理均匀，营养搭配，休息很好，经常运动，就是胖不起来，去医院各项指标也很正常，我身高180公分，现在急需由目前的65公斤增加到80公斤！</p>
+            <img id="answer_img" src="../img/answer.png">
+            <a href="" id="answer_href">回答问题</a>
+            <hr>
+            <span id="answer_number">1</span>
+            <span id="after_answer_number">个回答</span>
+            <a href=""><img id="sort_img" src="../img/sort.png"></a>
+            <hr>
+            <a href="" class="answer_author">回答者</a>
+            <div class="author_description">作者简介</div>
+            <p class="answerindescription">我的习惯是，午饭一完，即睡，又按他人提供的办法，每晚喝牛奶，喝了就睡，喝了一年，一年后体验，体重无变化，于是停了
+                关于为何天生偏瘦或胖，有过不少报道，说了一些道理，网上搜一下，能搜到的。我能记住的，说和个人身体代谢条件有关，偏瘦的，属代谢快的人。就是说，你哪怕吃了一些营养的东西，也很快能代谢掉。</p>
+            <hr>
+        </div>
+    </div>
+
+    <!--<script type="text/javascript">-->
+        <!--function displaySubMenu(li) {-->
+            <!--var subMenu = li.getElementsByTagName("ul")[0];-->
+            <!--subMenu.style.display = "block";-->
+        <!--}-->
+        <!--function hideSubMenu(li) {-->
+            <!--var subMenu = li.getElementsByTagName("ul")[0];-->
+            <!--subMenu.style.display = "none";-->
+        <!--}-->
+    <!--</script>-->
+
+
+</body>
+</html>
