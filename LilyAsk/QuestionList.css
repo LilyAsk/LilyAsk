@@ -1,0 +1,245 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "微软雅黑";
+}
+.top_nav{
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to bottom right,#52c5a4 0%,#53e3a6 100%);
+    position: fixed;
+    top:0;
+    left:0;
+}
+.nav_content{
+    width: 960px;
+    margin: 0 auto;
+}
+#logo{
+    float: left;
+    font-size: 35px;
+    color: white;
+}
+
+#ask_button{
+    font-size: 28px;
+    background-color: transparent;
+    border-color: transparent;
+    color: white;
+    float: right;
+    margin: 5px;
+}
+#ask_img{
+    width: 40px;
+    hight: 40px;
+    float: right;
+    bottom: 2px;
+    margin: 5px;
+}
+
+#account,#account li ul{
+    list-style-type:none;
+    float: right;
+    padding:0;
+    margin:0;
+    color:white;
+    font-size:28px;
+}
+#account li {
+    color: white;
+    text-align:center;
+    position:relative;
+}
+#account li ul li a:link, #account li ul li a:visited {
+    display:block;
+    text-decoration:none;
+    color:white;
+    border:1px solid #fff;
+    border-width:1px 1px 0 0;
+    background-color:RGB(83,218,166);
+}
+#account li ul {
+    display:none;
+    position:absolute;
+    margin: 0;
+    width:100%;
+}
+#account li ul li a:hover {
+    background:#53e3a6;
+}
+#account_nav{
+    display: block;
+    border: 0;
+    color:white;
+    font-size:28px;
+    text-decoration:none;
+    border:1px solid RGB(83,218,166);
+}
+#login_img{
+    padding-top: 2px;
+    padding-right: 2px;
+    width: 38px;
+    hight: 38px;
+    border: 0;
+}
+
+.page_content{
+    width: 960px;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+#left_side{
+    width: 75%;
+    clear: left;
+}
+#left_side_description{
+    float: left;
+     width: 70%;
+ }
+#list_img{
+    width: 38px;
+    hight: 38px;
+    float: left;
+}
+#question_list{
+    margin-top: 3px;
+    margin-left: 3px;
+    float: left;
+    font-family:"微软雅黑 Light";
+}
+hr{
+    clear: left;
+    margin-bottom: 10px;;
+    width: 100%;
+}
+.health_img{
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-bottom: 3px;
+}
+
+.question{
+    float: left;
+    font-size: 30px;
+    margin-left: 3px;
+    color: #53e3a6;
+    text-decoration: none;
+}
+.question_title{
+    font-size: 30px;
+    color: #53e3a6;
+}
+.question:hover{
+    text-decoration:underline;
+}
+.agree_background{
+    color:#53e3a6;
+    width: 35px;
+    height: 20px;
+    background-color:#e0f1ea;
+    clear: left;
+    text-align: center;
+    margin-left: 3px;
+}
+.author{
+    position: relative;
+    top:-20px;
+    left: 45px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.author:hover{
+    text-decoration:underline;
+}
+.answer{
+    float: left;
+    margin-left: 42px;
+    margin-top: 0px;
+    text-align:justify;            /* Mozilla Firefox等使用的两端对齐的方式 */
+    text-justify:inter-ideograph;  /* IE使用的两端对齐的方式 */
+}
+
+.question_description{
+    text-align:justify;            /* Mozilla Firefox等使用的两端对齐的方式 */
+    text-justify:inter-ideograph;
+    margin-top: 10px;
+}
+
+#answer_img{
+    width: 30px;
+    height: 30px;
+    float: left;
+}
+#answer_href{
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #0c1a14;
+    text-decoration: none;
+    float: left;
+}
+#answer_href:hover{
+    text-decoration:underline;
+}
+#answer_number{
+    font-size: 18px;
+    font-weight: 550;
+}
+#after_answer_number{
+    font-size: 18px;
+    font-weight: 550;
+}
+#sort_img{
+    margin-top: -5px;
+    padding: 0;
+    width: 30px;
+    height: 35px;
+    float: right;
+}
+.answer_author{
+    font-size: 18px;
+    color: #0c1a14;
+    text-decoration: none;
+    float: left;
+}
+.answer_author:hover{
+    text-decoration:underline;
+}
+.author_description{
+    float: left;
+    margin-left: 3px;
+    margin-top: 2px;
+    color: #7f918a;
+}
+.answerindescription{
+    float: left;
+    text-align:justify;            /* Mozilla Firefox等使用的两端对齐的方式 */
+    text-justify:inter-ideograph;
+    position: relative;
+}
+#agree_side{
+    width: 5%;
+    float: left;
+    margin-top: 200px;
+}
+#agree_img{
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+#disagree_img{
+    width: 40px;
+    height: 40px;
+}
+.agree_background_in_description{
+    color:#53e3a6;
+    width: 80%;
+    background-color: #e0f1ea;
+    text-align: center;
+    margin: 3px;
+    border-radius: 5px;
+
+}
