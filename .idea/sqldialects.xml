@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/LilyAsk/sys/db/answer_info.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/LilyAsk/sys/db/comment_info.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/LilyAsk/sys/db/question_info.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/LilyAsk/sys/db/user_basic_info.sql" dialect="MySQL" />
+  </component>
+</project>
