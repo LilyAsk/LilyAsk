@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50633
 File Encoding         : 65001
 
-Date: 2016-10-22 17:33:35
+Date: 2016-10-22 21:42:27
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -29,8 +29,7 @@ CREATE TABLE `user_detail_info` (
   `email` char(20) DEFAULT NULL,
   `phone` char(20) DEFAULT NULL,
   `address` char(100) DEFAULT NULL,
-  `introduction` char(100) DEFAULT NULL,
-  PRIMARY KEY (`uid`)
+  `introduction` char(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- ----------------------------

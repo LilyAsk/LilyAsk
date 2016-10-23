@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50633
 File Encoding         : 65001
 
-Date: 2016-10-22 17:33:03
+Date: 2016-10-23 09:25:41
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -27,6 +27,7 @@ CREATE TABLE `answer_info` (
   `a_time` datetime NOT NULL,
   `agree_num` int(10) unsigned NOT NULL,
   `oppose_num` int(10) unsigned NOT NULL,
+  `comment_num` int(10) NOT NULL,
   PRIMARY KEY (`aid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
