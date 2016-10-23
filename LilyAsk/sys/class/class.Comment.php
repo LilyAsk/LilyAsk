@@ -6,6 +6,9 @@
  * Date: 2016/10/22
  * Time: 21:18
  */
+
+require_once (dirname(__FILE__).'/class.Db.php');
+
 class Comment extends Db
 {
     private $cid;

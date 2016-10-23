@@ -6,6 +6,10 @@
  * Date: 2016/10/22
  * Time: 21:15
  */
+
+require_once (dirname(__FILE__).'/class.Db.php');
+//require_once (dirname(dirname(__FILE__)) . '/common.php');
+
 class User extends Db
 {
     private $uid;
@@ -23,8 +27,22 @@ class User extends Db
     const LOGIN_SUCCESS = 1;
     const LOGIN_FAIL = 0;
 
+    // 声明表名
+    const USER_INFO = 'user_info';
+
+
+
     /**
      * User constructor.
+     */
+    public function __construct()
+    {
+        parent::__construct();
+    }
+
+
+    /**
+     * User constructor1.
      * @param $uid
      * @param $password
      * @param string $nickname
@@ -37,7 +55,7 @@ class User extends Db
      * @param string $address
      * @param string $introduction
      */
-    public function __construct($uid, $password, $nickname="", $u_description="", $name="", $gender=null, $birthday,
+    public function __construct1($uid, $password, $nickname="", $u_description="", $name="", $gender=null, $birthday,
                          $email="", $phone="", $address="", $introduction="")
     {
         parent::__construct();
@@ -66,7 +84,7 @@ class User extends Db
         // 密码通过MD5加密
         $password = md5($password);
 
-        $result = mysqli_query($this->dbc, "SELECT uid FROM user_info WHERE uid = $uid AND password = $password");
+        $result = mysqli_query($this->dbc, "SELECT uid FROM " . User::USER_INFO ." WHERE uid = $uid AND password = $password");
 
         if(!$result)
             return User::LOGIN_FAIL;
@@ -89,8 +107,17 @@ class User extends Db
      */
     public function add($uid, $password, $nickname, $name)
     {
+        // 密码通过MD5加密
+        $password = md5($password);
 
+        $q = "INSERT INTO ". User::USER_INFO. " (uid, password, nickname, name) VALUES ($uid, '$password', '$nickname', '$name')";
+        $result = $this->dbc->query($q);
 
+        if ($result != 0){
+            echo 'Register failed.<br/>';
+        }else{
+            echo 'Register succeeded<br/>';
+        }
 
     }
 
@@ -107,9 +134,18 @@ class User extends Db
      * @param string $address
      * @param string $introduction
      */
-    public function modify($uid, $nickname, $u_description="", $name="", $gender=null, $birthday="",
+    public function modify($uid, $nickname, $gender=null, $birthday="", $u_description="", $name="",
                         $email="", $phone="", $address="", $introduction="")
     {
+        $q = "UPDATE " . User::USER_INFO . " SET nickname='$nickname', u_description='$u_description', name='$name', gender=$gender,
+                                                 birthday='$birthday', email='$email', phone='$phone', address='$address', introduction='$introduction'
+              WHERE uid=$uid";
+        $result = $this->dbc->query($q);
+        if ($result != 0){
+            echo 'Modify failed.<br/>';
+        }else{
+            echo 'Modify succeeded<br/>';
+        }
 
     }
 
@@ -117,10 +153,20 @@ class User extends Db
     /**
      * 通过学号搜索用户
      * @param $uid
+     * @return bool|mysqli_result
      */
     public function getUserById($uid)
     {
-
+        $q = "SELECT * FROM " . User::USER_INFO . " WHERE uid=$uid";
+        $result = $this->dbc->query($q);
+        if (mysqli_num_rows($result) > 0) {
+            // output data of each row
+            while($row = mysqli_fetch_assoc($result)) {
+                echo "uid: " . $row["uid"]. " - Name: " . $row["name"]. "<br>";
+            }
+        } else {
+            echo "0 results";
+        }
     }
 
 
@@ -156,3 +202,7 @@ class User extends Db
 }
 
 $userr = new User();
+//$userr->add(1234, '123', 'Hiki', 'Guo');
+//$userr->modify(12345, 'hiki', true, date("Y-m-d"), 'Iam hiki', 'haobin', 'guohaobin', '123', 'baita', 'Innanjing');
+//$userr->modify(123, 'hiki');
+echo $userr->getUserById(123);

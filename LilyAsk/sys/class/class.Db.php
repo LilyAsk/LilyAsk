@@ -29,19 +29,23 @@ class Db
         $this->DBName = DB_NAME;
         $this->DBUser = DB_USER;
         $this->DBPassword = DB_PASSWORD;
-        $this->connect();
+        $this->dbc = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+//        $this->connect();
     }
 
-    private function connect()
-    {
-        $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) OR die('Could not connect to MySQL: ' . mysqli_connect_error());
-        if($dbc) {
-            $this->connected = true;
-            echo 'success';
-        }else{
-            echo 'fail';
-        }
-    }
+//    protected function connect()
+//    {
+//        $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) OR die('Could not connect to MySQL: ' . mysqli_connect_error());
+//        if($dbc) {
+//            $this->connected = true;
+//            echo 'success<br/>';
+//        }else{
+//            echo 'fail<br/>';
+//        }
+//
+//    }
+
+
 
 
 }
