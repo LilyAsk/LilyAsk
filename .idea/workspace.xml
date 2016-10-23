@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a9ae7dd-795f-45e1-b4e1-e36a89aa56ab" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LilyAsk/sys/class/class.Db.php" afterPath="$PROJECT_DIR$/LilyAsk/sys/class/class.Db.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LilyAsk/sys/class/class.User.php" afterPath="$PROJECT_DIR$/LilyAsk/sys/class/class.User.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="LilyAsk.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -394,12 +392,12 @@
       <workItem from="1477128155039" duration="1306000" />
       <workItem from="1477136399560" duration="7872000" />
       <workItem from="1477183265756" duration="4630000" />
-      <workItem from="1477188002378" duration="1395000" />
+      <workItem from="1477188002378" duration="1453000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21684000" />
+    <option name="totallyTimeSpent" value="21742000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
