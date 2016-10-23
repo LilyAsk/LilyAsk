@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>提问</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">LilyAsk</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a id="ques_btn" href="ask_question.html"><img src="../img/question.png">提问</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <img src="../img/account.png">User
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#"><img src="../img/userLogo.png">我的主页</a></li>
+                        <li><a href="#"><img src="../img/logout.png">退出</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="ask_question_area" class="container">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+        <form>
+            <div class="form-group">
+                <label for="questionTitle">写下你的问题：</label>
+                <input type="text" class="form-control" id="questionTitle">
+            </div>
+            <div class="form-group">
+                <label for="questionDescribe">问题描述：</label>
+                <textarea class="form-control" row="5" id="questionDescribe" placeholder="问题的详细描述..."></textarea>
+            </div>
+        </form>
+    </div>
+    <div class="col-md-2"></div>
+</div>
+
+<div id="button_of_question" class="container">
+    <div class="col-lg-8 col-md-7 col-sm-8"></div>
+    <div class="col-lg-2 col-md-3 col-sm-4">
+        <a href="question_list.html" class="btn btn-link">返回</a>
+        <button type="button" class="btn btn-primary">提交</button>
+    </div>
+    <div class="col-lg-2 col-md-2"></div>
+</div>
+
+</body>
+</html>

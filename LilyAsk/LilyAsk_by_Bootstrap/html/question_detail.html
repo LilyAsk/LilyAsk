@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>如何健康增加体重</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">LilyAsk</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a id="ques_btn" href="ask_question.html"><img src="../img/question.png">提问</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <img src="../img/account.png">User
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#"><img src="../img/userLogo.png">我的主页</a></li>
+                        <li><a href="#"><img src="../img/logout.png">退出</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div id="answer_area" class="container">
+    <div class="col-md-10">
+        <h2>如何健康增加体重</h2>
+        <p>本人每日膳食安排合理均匀，营养搭配，休息很好，经常运动，就是胖不起来，去医院各项指标也很正常，我身高180公分，现在急需由目前的65公斤增加到80公斤！</p>
+        <button id="answer_btn" data-toggle="collapse" data-target="#answer">回答问题</button>
+        <div id="answer" class="panel-collapse collapse">
+            <textarea class="form-control" row="5"></textarea>
+            <div class="container">
+                <div class="col-md-9 col-sm-10"></div>
+                <div class="col-md-1 col-sm-2">
+                    <button type="button" class="btn btn-primary">提交</button>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <div class="col-md-2"></div>
+</div>
+
+<div id="num_of_answers" class="container">
+    <div class="col-md-10">
+        <label>1个回答</label>
+        <a><img src="../img/sort.png"></a>
+        <hr>
+    </div>
+    <div class="col-md-2"></div>
+</div>
+
+<div id="comment_area" class="container">
+    <div class="col-md-10">
+        <label>张三</label>
+        <label>作者简介</label>
+        <br>
+
+        <p>我的习惯是，午饭一完，即睡，又按他人提供的办法，每晚喝牛奶，喝了就睡，喝了一年，一年后体验，体重无变化，于是停了 关于为何天生偏瘦或胖，有过不少报道，说了一些道理，网上搜一下，能搜到的。我能记住的，说和个人身体代谢条件有关，偏瘦的，属代谢快的人。就是说，你哪怕吃了一些营养的东西，也很快能代谢掉。</p>
+
+        <a id="agree">
+            <img src="../img/agree.png">
+            <label id="num_of_agree"></label>
+        </a>
+        <a id="against">
+            <img src="../img/against.png">
+            <label id="num_of_against"></label>
+        </a>
+        <a id="comment_btn" data-toggle="collapse" data-target="#comment">评论</a>
+        <div id="comment" class="panel-collapse collapse">
+            <textarea class="form-control" row="5"></textarea>
+            <div class="container">
+                <div class="col-md-9 col-sm-10"></div>
+                <div class="col-md-1 col-sm-2">
+                    <button type="button" class="btn btn-primary">提交</button>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <div class="col-md-2"></div>
+</div>
+
+</body>
+</html>

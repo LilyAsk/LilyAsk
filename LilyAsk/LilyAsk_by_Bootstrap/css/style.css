@@ -1,0 +1,304 @@
+* {
+    font-family: "Microsoft YaHei UI Light", "Adobe Fan Heiti Std B", serif;
+}
+img {
+    width: 24px;
+    height: 24px;
+}
+hr {
+    border-top: 1px solid #bbb;
+    border-bottom: 1px solid #fff;
+}
+input[type="text"]:focus {
+    border-color: #53e3a6 !important;
+    outline: medium;
+    box-shadow: 0px 0px 10px #53e3a6 !important;
+}
+input[type="text"]:hover {
+    box-shadow: 0px 0px 10px #53e3a6;
+}
+input[type="password"]:focus {
+    border-color: #53e3a6;
+    outline: medium;
+}
+input[type="password"]:hover {
+    box-shadow: 0px 0px 10px #53e3a6;
+}
+textarea:focus {
+    border-color: #53e3a6 !important;
+    outline: medium;
+    box-shadow: 0px 0px 10px #53e3a6 !important;
+}
+textarea:hover {
+    box-shadow: 0px 0px 10px #53e3a6;
+}
+button:hover {
+    background-color: #53e383;
+    box-shadow: 0px 0px 10px #53e3a6;
+}
+button:active {
+    background-color: #53e3a6;
+    outline: medium !important;
+}
+button:focus {
+    outline: medium !important;
+}
+/**************导航栏******************/
+nav {
+    background-color: #53e3a6 !important;
+    border-style: none !important;
+}
+.navbar-header a {
+    color: white !important;
+    font-size: 2em;
+    font-weight: bold;
+}
+.nav a {
+    color: white !important;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.nav img {
+    margin-right: 5px;
+}
+.dropdown-menu a {
+    font-size: 1em;
+}
+.open .dropdown-toggle {
+    background-color: #b5e3b9 !important;
+}
+.dropdown li a {
+    background-color: #cde3ce !important;
+}
+.dropdown li a:hover {
+    background-color: #53e3a6 !important;
+}
+#ques_btn:focus {
+    background-color: #B5E3B9;
+}
+
+a {
+    cursor: pointer;
+}
+button {
+    cursor: pointer;
+}
+
+
+
+
+#topTitle {
+    margin-top: 7%;
+}
+#headLogo {
+    background-color: #ffffff;
+    text-align: center;
+}
+#headLogo h1 {
+    color: #53e3a6;
+    font-weight: bold;
+    letter-spacing: 4px;
+    font-size: 80px;
+}
+#headLogo p {
+    margin-top: 25px;
+    font-family: "仿宋";
+    font-size: 1.2em;
+}
+#changeState {
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-top: -40px;
+}
+#changeState a {
+    text-decoration: none;
+}
+#changeState #changeStateToLogin {
+    color: #53e3a6;
+}
+#changeState #changeStateToRegister {
+    color: gray;
+}
+/********************************************登录界面***************************************/
+#loginState {
+    display: block;
+    text-align: center;
+    margin-top: 55px;
+    margin-bottom: 7%;
+}
+#loginState form {
+    margin-bottom: 30px;
+}
+#loginState label {
+    font-size: 1.4em;
+    margin-right: -5px;
+}
+#loginState input {
+    border-radius: 9px;
+    border-style: solid;
+    height: 35px;
+}
+#loginState button {
+    width: 220px;
+    height: 40px;
+    border-radius: 9px;
+    background-color: #53e3a6;
+    border-style: none;
+    font-size: 1.6em;
+}
+#loginState a {
+    margin-top: 20px;
+    display: block;
+}
+.cannotsee {
+    margin-top: 5px;
+    cursor: pointer;
+}
+.canaee {
+    margin-top: 5px;
+    cursor: pointer;
+}
+.cannotsee_password {
+    display: block;
+}
+.cansee_password {
+    display: none;
+}
+/********************************************注册界面**************************************/
+#registerState {
+    display: none;
+    text-align: center;
+    margin-top: 55px;
+    margin-bottom: 7%;
+}
+#registerState form {
+    margin-bottom: 30px;
+}
+#registerState label {
+    font-size: 1.4em;
+    margin-right: -5px;
+}
+#registerState input {
+    border-radius: 9px;
+    border-style: solid;
+    height: 35px;
+}
+#registerState button {
+    width: 220px;
+    height: 40px;
+    border-radius: 9px;
+    background-color: #53e3a6;
+    border-style: none;
+    font-size: 1.6em;
+}
+
+/**********************************提问页面*****************************************/
+#ask_question_area {
+    margin-top: 17%;
+}
+#ask_question_area label {
+    font-size: 1.4em;
+}
+#ask_question_area input {
+    height: 45px;
+    border-radius: 9px;
+    border-style: solid;
+}
+#ask_question_area textarea {
+    height: 120px;
+    resize: none;
+    border-radius: 9px;
+    border-style: solid;
+}
+#button_of_question {
+    margin-top: 20px;
+}
+#button_of_question button {
+    width: 100px;
+    background-color: #53e3a6;
+    border-style: none;
+    border-radius: 9px;
+    height: 40px;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+/*********************************问题列表**************************************/
+#question_list_title {
+    margin-top: 120px;
+}
+#question_list_title hr {
+    border-top: 3px double #bbb;
+}
+#question_list_title img {
+    width: 40px;
+    height: 40px;
+    margin-top: -8px;
+}
+#question_list_title label {
+    font-size: 1.7em;
+}
+#question_list_list a {
+    font-size: 2.3em;
+}
+#question_list_list img {
+    width: 36px;
+    height: 36px;
+    margin-top: -4px;
+}
+#question_list_list h4 {
+    margin-left: 35px;
+}
+#question_list_list p {
+    margin-left: 35px;
+}
+/************************************问题详情*********************************/
+#answer_area {
+    margin-top: 120px;
+}
+#answer_area h2 {
+    color: #53e3a6;
+}
+#answer_btn {
+    width: 90px;
+    height: 33px;
+    border-style: none;
+    border-radius: 9px;
+    background-color: #53e3a6;
+    color: white;
+    font-weight: bold;
+}
+#answer_area textarea {
+    resize: none;
+    border-radius: 9px;
+    border-style: solid;
+    margin-top: 10px;
+    height: 120px;
+}
+#answer button {
+    margin-top: 10px;
+    background-color: #53e3a6;
+    border-style: none;
+    border-radius: 9px;
+    margin-left: -16px;
+}
+#num_of_answers img {
+    float: right;
+}
+#comment textarea {
+    margin-top: 10px;
+    border-radius: 9px;
+    border-style: solid;
+    resize: none;
+    height: 120px;
+}
+#comment button {
+    margin-top: 10px;
+    background-color: #53e3a6;
+    border-style: none;
+    border-radius: 9px;
+    margin-left: -16px;
+}
+#comment_area label {
+    margin-right: 20px;
+}

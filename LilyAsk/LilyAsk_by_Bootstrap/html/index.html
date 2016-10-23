@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LilyAsk</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="../css/style.css">
+    <script type="text/javascript" src="../js/js.js"></script>
+</head>
+<body>
+
+
+<div id="topTitle" class="container">
+    <div id="headLogo" class="jumbotron">
+        <h1>LilyAsk</h1>
+        <p>面向南京大学师生的问答型社区</p>
+    </div>
+</div>
+
+<div id="changeState" class="container">
+    <a class="col-sm-4 col-md-4 col-lg-5"></a>
+    <a id="changeStateToLogin" class="col-sm-2 col-md-2 col-lg-1" onclick="show_login()">登录</a>
+    <a id="changeStateToRegister" class="col-sm-2 col-md-2 col-lg-1" onclick="show_register()">注册</a>
+    <a class="col-sm-4 col-md-4 col-lg-5"></a>
+</div>
+
+
+<div id="loginState" class="container">
+    <form class="form-inline">
+        <div class="form-group">
+            <label class="col-md-4 col-sm-4 col-xm-2" for="username">昵称：</label>
+            <input class="col-md-7 col-sm-7 col-xm-4" type="text" class="form-control" id="username">
+            <div class="col-md-1 col-sm-6">
+                <img src="../img/blank.png">
+            </div>
+        </div>
+    </form>
+
+    <form class="form-inline cannotsee_password" id="log_notsee">
+        <div class="form-group">
+            <label class="col-md-4 col-sm-4 col-xm-2">密码：</label>
+            <input class="col-md-7 col-sm-7 col-xm-4" type="password" class="form-control password" id="log_notsee_password">
+            <div class="col-md-1 col-sm-1 col-xm-6">
+                <img onclick="canseelog()" class="cannotsee" src="../img/cansee.png">
+            </div>
+        </div>
+    </form>
+
+    <form class="form-inline cansee_password" id="log_see">
+        <div class="form-group">
+            <label class="col-md-4 col-sm-4 col-xm-2">密码：</label>
+            <input class="col-md-7 col-sm-7 col-xm-4" type="text" class="form-control see_password" id="log_see_password">
+            <div class="col-md-1 col-sm-1 col-xm-6">
+                <img onclick="cannotseelog()" class="canaee" src="../img/cannotsee.png">
+            </div>
+        </div>
+    </form>
+
+    <button type="button" class="btn btn-primary">登录</button>
+    <a href="question_list.html" class="btn btn-link">以游客身份登录</a>
+</div>
+
+
+<div id="registerState" class="container">
+    <form class="form-inline">
+        <div class="form-group">
+            <label class="col-md-4" for="username">昵称：</label>
+            <input class="col-md-7" type="text" class="form-control" id="admin">
+            <div class="col-md-1">
+                <img src="../img/blank.png">
+            </div>
+        </div>
+    </form>
+
+    <form class="form-inline">
+        <div class="form-group">
+            <label class="col-md-4">姓名：</label>
+            <input class="col-md-7" type="text" class="form-control" id="name">
+            <div class="col-md-1">
+                <img src="../img/blank.png">
+            </div>
+        </div>
+    </form>
+
+    <form class="form-inline">
+        <div class="form-group">
+            <label class="col-md-4">学号：</label>
+            <input class="col-md-7" type="text" class="form-control" id="id">
+            <div class="col-md-1">
+                <img src="../img/blank.png">
+            </div>
+        </div>
+    </form>
+
+    <form class="form-inline cannotsee_password" id="reg_notsee">
+        <div class="form-group">
+            <label class="col-md-4">密码：</label>
+            <input class="col-md-7" type="password" class="form-control password" id="reg_notsee_password">
+            <div class="col-md-1">
+                <img onclick="canseereg()" class="cannotsee" src="../img/cansee.png">
+            </div>
+        </div>
+    </form>
+
+    <form class="form-inline cansee_password" id="reg_see">
+        <div class="form-group">
+            <label class="col-md-4">密码：</label>
+            <input class="col-md-7" type="text" class="form-control see_password" id="reg_see_password">
+            <div class="col-md-1">
+                <img onclick="cannotseereg()" class="canaee" src="../img/cannotsee.png">
+            </div>
+        </div>
+    </form>
+
+    <button type="button" class="btn btn-primary">注册</button>
+</div>
+
+</body>
+</html>
