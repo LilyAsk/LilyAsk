@@ -12,66 +12,30 @@ require_once (dirname(__FILE__).'/class.Db.php');
 
 class User extends Db
 {
-    private $uid;
-    private $password;
-    private $nickname;
-    private $u_description;
-    private $name;
-    private $gender;
-    private $birthday;
-    private $email;
-    private $phone;
-    private $address;
-    private $introduction;
-
+//    private $uid;
+//    private $password;
+//    private $nickname;
+//    private $u_description;
+//    private $name;
+//    private $gender;
+//    private $birthday;
+//    private $email;
+//    private $phone;
+//    private $address;
+//    private $introduction;
     const LOGIN_SUCCESS = 1;
     const LOGIN_FAIL = 0;
-
     // 声明表名
     const USER_INFO = 'user_info';
 
 
-
     /**
-     * User constructor.
+     * User constructor
      */
-    public function __construct()
-    {
+    public function __construct(){
         parent::__construct();
     }
 
-
-    /**
-     * User constructor1.
-     * @param $uid
-     * @param $password
-     * @param string $nickname
-     * @param string $u_description
-     * @param string $name
-     * @param null $gender
-     * @param $birthday
-     * @param string $email
-     * @param string $phone
-     * @param string $address
-     * @param string $introduction
-     */
-    public function __construct1($uid, $password, $nickname="", $u_description="", $name="", $gender=null, $birthday,
-                         $email="", $phone="", $address="", $introduction="")
-    {
-        parent::__construct();
-        $this->uid = $uid;
-        $this->password = $password;
-        $this->nickname = $nickname;
-        $this->u_description = $u_description;
-        $this->name = $name;
-        $this->gender = $gender;
-        $this->birthday = $birthday;
-        $this->email = $email;
-        $this->phone = $phone;
-        $this->address = $address;
-        $this->introduction = $introduction;
-
-    }
 
     /**
      * 登录
@@ -81,10 +45,10 @@ class User extends Db
      */
     public function login($uid, $password)
     {
-        // 密码通过MD5加密
-        $password = md5($password);
 
-        $result = mysqli_query($this->dbc, "SELECT uid FROM " . User::USER_INFO ." WHERE uid = $uid AND password = $password");
+        $q = "SELECT uid FROM " . User::USER_INFO ." WHERE uid = $uid AND password = $password";
+
+        $result = $this->dbc->query($q);
 
         if(!$result)
             return User::LOGIN_FAIL;
@@ -107,19 +71,22 @@ class User extends Db
      */
     public function add($uid, $password, $nickname, $name)
     {
+
         // 密码通过MD5加密
         $password = md5($password);
 
         $q = "INSERT INTO ". User::USER_INFO. " (uid, password, nickname, name) VALUES ($uid, '$password', '$nickname', '$name')";
+
         $result = $this->dbc->query($q);
 
         if ($result != 0){
-            echo 'Register failed.<br/>';
+            echo 'Register succeeded.<br/>';
         }else{
-            echo 'Register succeeded<br/>';
+            echo 'Register failed<br/>';
         }
 
     }
+
 
     /**
      * 修改用户信息
@@ -142,40 +109,59 @@ class User extends Db
               WHERE uid=$uid";
         $result = $this->dbc->query($q);
         if ($result != 0){
-            echo 'Modify failed.<br/>';
+            echo 'Modify user succeeded.<br/>';
         }else{
-            echo 'Modify succeeded<br/>';
+            echo 'Modify user failed.<br/>';
         }
 
     }
 
 
     /**
-     * 通过学号搜索用户
+     * 通过用户ID查找用户
      * @param $uid
-     * @return bool|mysqli_result
+     * @return array|null
      */
     public function getUserById($uid)
     {
         $q = "SELECT * FROM " . User::USER_INFO . " WHERE uid=$uid";
+
         $result = $this->dbc->query($q);
+
+        // 将获取的用户信息保存在一个一维数组内
+        $row = array();
         if (mysqli_num_rows($result) > 0) {
-            // output data of each row
-            while($row = mysqli_fetch_assoc($result)) {
-                echo "uid: " . $row["uid"]. " - Name: " . $row["name"]. "<br>";
-            }
+            $row = mysqli_fetch_assoc($result);
         } else {
-            echo "0 results";
+            echo "getUserById: 0 results";
         }
+
+        return $row;
     }
 
 
     /**
      * 获取所有用户信息
+     * @return array
      */
     public function getAllUsers()
     {
-        return mysqli_query($this->dbc,"SELECT * FROM user_info");
+        $q = "SELECT * FROM " . User::USER_INFO;
+
+        $result = $this->dbc->query($q);
+
+        // 将获取的用户信息保存在一个二维数组
+        $resultSet = array();
+        if (mysqli_num_rows($result) > 0) {
+            while($row = mysqli_fetch_assoc($result)){
+                $resultSet[] = $row;
+            }
+        }else {
+            echo "getAllUsers: 0 results";
+        }
+
+        return $resultSet;
+
     }
 
 
@@ -183,26 +169,63 @@ class User extends Db
      * 删除用户
      * @param $id
      */
-    public function delete($id) {
+    public function delete($uid) {
+
+        $q = "DELETE FROM " . User::USER_INFO . " WHERE uid=$uid";
+
+        $result = $this->dbc->query($q);
+
+        if ($result != 0){
+            echo 'Delete user succeeded.<br/>';
+        }else{
+            echo 'Delete user failed.<br/>';
+        }
 
     }
 
 
     /**
      * 判断用户是否存在
-     * @param $id
+     * @param $uid
+     * @return bool
      */
-    public function isExist($id)
+    public function isExist($uid)
     {
+        $q = "SELECT * FROM " . User::USER_INFO . " WHERE uid=$uid";
+        $result = $this->dbc->query($q);
+
+        if(mysqli_num_rows($result) > 0){
+            return true;
+        }else{
+            return false;
+        }
+
 
     }
 
-
-
 }
 
+
+
+// 用于测试
 $userr = new User();
-//$userr->add(1234, '123', 'Hiki', 'Guo');
+$userr->add(1234, '123', 'Hiki', 'Guo');
 //$userr->modify(12345, 'hiki', true, date("Y-m-d"), 'Iam hiki', 'haobin', 'guohaobin', '123', 'baita', 'Innanjing');
 //$userr->modify(123, 'hiki');
-echo $userr->getUserById(123);
+//$arr =  $userr->getUserById(123);
+//foreach ($arr as $item) {
+//    echo $item . " ";
+//}
+//echo "<br/>";
+$result = $userr->getAllUsers();
+
+foreach ($result as $item){
+    foreach ($item as $tem) {
+        echo $tem . " ";
+    }
+    echo '<br/>';
+}
+
+//$exist = $userr->isExist(123);
+//echo $exist;
+//$userr->delete(1234);
