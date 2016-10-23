@@ -16,12 +16,12 @@ define('DB_PASSWORD', 'guohaobin555');
 
 class Db
 {
-    private $host;
-    private $DBName;
-    private $DBUser;
-    private $DBPassword;
-    private $dbc;
-    private $connected = false;
+    protected $host;
+    protected $DBName;
+    protected $DBUser;
+    protected $DBPassword;
+    protected $dbc;
+    protected $connected = false;
 
     public function __construct()
     {
@@ -37,20 +37,12 @@ class Db
         $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) OR die('Could not connect to MySQL: ' . mysqli_connect_error());
         if($dbc) {
             $this->connected = true;
+            echo 'success';
+        }else{
+            echo 'fail';
         }
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 }
+

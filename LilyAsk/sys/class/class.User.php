@@ -57,13 +57,26 @@ class User extends Db
 
     /**
      * 登录
-     * @param $uid 学号
+     * @param $uid
      * @param $password
+     * @return int
      */
     public function login($uid, $password)
     {
+        // 密码通过MD5加密
+        $password = md5($password);
 
-        $result = mysqli_query("SELECT uid FROM user_ WHERE `username` = ? AND password = ?", array($username, md5($password)));
+        $result = mysqli_query($this->dbc, "SELECT uid FROM user_info WHERE uid = $uid AND password = $password");
+
+        if(!$result)
+            return User::LOGIN_FAIL;
+
+        // 获取一个用户
+        $result = $result[0];
+        echo 'The user found is '. $result;
+
+        return User::LOGIN_SUCCESS;
+
     }
 
 
@@ -76,6 +89,8 @@ class User extends Db
      */
     public function add($uid, $password, $nickname, $name)
     {
+
+
 
     }
 
@@ -114,7 +129,7 @@ class User extends Db
      */
     public function getAllUsers()
     {
-
+        return mysqli_query($this->dbc,"SELECT * FROM user_info");
     }
 
 
@@ -139,3 +154,5 @@ class User extends Db
 
 
 }
+
+$userr = new User();

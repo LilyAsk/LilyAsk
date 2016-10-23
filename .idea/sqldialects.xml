@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/LilyAsk/sys/class/class.Answer.php" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/LilyAsk/sys/class/class.Comment.php" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/LilyAsk/sys/class/class.Db.php" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/LilyAsk/sys/class/class.Question.php" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/LilyAsk/sys/class/class.User.php" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/LilyAsk/sys/db/answer_info.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/LilyAsk/sys/db/comment_info.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/LilyAsk/sys/db/question_info.sql" dialect="MySQL" />
