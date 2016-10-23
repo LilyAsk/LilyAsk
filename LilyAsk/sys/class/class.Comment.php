@@ -28,6 +28,7 @@ class Comment extends Db
      */
     public function __construct($cid, $uid, $aid, $comment, $c_time, $agree_num, $oppose_num)
     {
+        parent::__construct();
         $this->cid = $cid;
         $this->uid = $uid;
         $this->aid = $aid;

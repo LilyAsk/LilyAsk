@@ -20,6 +20,8 @@ class User extends Db
     private $address;
     private $introduction;
 
+    const LOGIN_SUCCESS = 1;
+    const LOGIN_FAIL = 0;
 
     /**
      * User constructor.
@@ -61,6 +63,7 @@ class User extends Db
     public function login($uid, $password)
     {
 
+        $result = mysqli_query("SELECT uid FROM user_ WHERE `username` = ? AND password = ?", array($username, md5($password)));
     }
 
 

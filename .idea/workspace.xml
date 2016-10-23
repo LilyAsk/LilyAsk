@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a9ae7dd-795f-45e1-b4e1-e36a89aa56ab" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LilyAsk/sys/class/class.Answer.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LilyAsk/sys/class/class.Comment.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LilyAsk/sys/class/class.Db.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LilyAsk/sys/class/class.Question.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LilyAsk/sys/class/class.User.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LilyAsk/sys/class/Db.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LilyAsk/sys/db/answer_info.sql" afterPath="$PROJECT_DIR$/LilyAsk/sys/db/answer_info.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LilyAsk/sys/db/comment_info.sql" afterPath="$PROJECT_DIR$/LilyAsk/sys/db/comment_info.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LilyAsk/sys/db/user_basic_info.sql" afterPath="$PROJECT_DIR$/LilyAsk/sys/db/user_basic_info.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LilyAsk/sys/db/user_detail_info.sql" afterPath="$PROJECT_DIR$/LilyAsk/sys/db/user_detail_info.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LilyAsk/sys/class/class.Answer.php" afterPath="$PROJECT_DIR$/LilyAsk/sys/class/class.Answer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LilyAsk/sys/class/class.Comment.php" afterPath="$PROJECT_DIR$/LilyAsk/sys/class/class.Comment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LilyAsk/sys/class/class.Db.php" afterPath="$PROJECT_DIR$/LilyAsk/sys/class/class.Db.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LilyAsk/sys/class/class.Question.php" afterPath="$PROJECT_DIR$/LilyAsk/sys/class/class.Question.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LilyAsk/sys/class/class.User.php" afterPath="$PROJECT_DIR$/LilyAsk/sys/class/class.User.php" />
     </list>
     <ignored path="LilyAsk.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,19 +42,21 @@
       <file leaf-file-name="class.Db.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LilyAsk/sys/class/class.Db.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+            <state relative-caret-position="528">
+              <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="class.User.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="class.User.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LilyAsk/sys/class/class.User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="968">
-              <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="572">
+              <caret line="65" column="53" selection-start-line="65" selection-start-column="53" selection-end-line="65" selection-end-column="53" />
+              <folding>
+                <marker date="1477187591003" expanded="true" signature="1546:1605" ph="SELECT id FR... user" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -67,8 +64,8 @@
       <file leaf-file-name="class.Question.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LilyAsk/sys/class/class.Question.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="638">
+              <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -77,8 +74,8 @@
       <file leaf-file-name="class.Answer.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LilyAsk/sys/class/class.Answer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2310">
-              <caret line="105" column="17" selection-start-line="105" selection-start-column="17" selection-end-line="105" selection-end-column="17" />
+            <state relative-caret-position="308">
+              <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -114,14 +111,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="class.Comment.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="class.Comment.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LilyAsk/sys/class/class.Comment.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
-              <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+            <state relative-caret-position="457">
+              <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
               <folding>
                 <element signature="e#266#458#0#PHP" expanded="false" />
-                <element signature="n#__construct#0;n#Comment#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -148,12 +144,12 @@
         <option value="$PROJECT_DIR$/LilyAsk/front/admin/login.php" />
         <option value="$PROJECT_DIR$/LilyAsk/sys/class/Db.php" />
         <option value="$PROJECT_DIR$/LilyAsk/sys/class/class.Log.php" />
-        <option value="$PROJECT_DIR$/LilyAsk/sys/class/class.Db.php" />
-        <option value="$PROJECT_DIR$/LilyAsk/sys/class/class.User.php" />
-        <option value="$PROJECT_DIR$/LilyAsk/sys/class/class.Question.php" />
         <option value="$PROJECT_DIR$/LilyAsk/sys/db/answer_info.sql" />
+        <option value="$PROJECT_DIR$/LilyAsk/sys/class/class.Db.php" />
         <option value="$PROJECT_DIR$/LilyAsk/sys/class/class.Answer.php" />
         <option value="$PROJECT_DIR$/LilyAsk/sys/class/class.Comment.php" />
+        <option value="$PROJECT_DIR$/LilyAsk/sys/class/class.Question.php" />
+        <option value="$PROJECT_DIR$/LilyAsk/sys/class/class.User.php" />
       </list>
     </option>
   </component>
@@ -388,22 +384,32 @@
       <workItem from="1477054435227" duration="1551000" />
       <workItem from="1477128155039" duration="1306000" />
       <workItem from="1477136399560" duration="7872000" />
-      <workItem from="1477183265756" duration="3401000" />
+      <workItem from="1477183265756" duration="4630000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19060000" />
+    <option name="totallyTimeSpent" value="20289000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="952" y="0" width="976" height="1038" extended-state="1" />
+    <frame x="952" y="0" width="976" height="1038" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30641592" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -413,7 +419,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -446,7 +451,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1477187591003" expanded="true" signature="1546:1605" ph="SELECT id FR... user" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -472,7 +479,6 @@
           <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
           <folding>
             <element signature="e#266#458#0#PHP" expanded="false" />
-            <element signature="n#__construct#0;n#Comment#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -596,30 +602,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LilyAsk/sys/class/class.Db.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LilyAsk/sys/class/class.User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="968">
-          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LilyAsk/sys/class/class.Question.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LilyAsk/sys/db/answer_info.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
@@ -636,21 +618,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LilyAsk/sys/class/class.Answer.php">
+    <entry file="file://$PROJECT_DIR$/LilyAsk/sys/class/class.Comment.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2310">
-          <caret line="105" column="17" selection-start-line="105" selection-start-column="17" selection-end-line="105" selection-end-column="17" />
+        <state relative-caret-position="457">
+          <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+          <folding>
+            <element signature="e#266#458#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LilyAsk/sys/class/class.Db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LilyAsk/sys/class/class.Comment.php">
+    <entry file="file://$PROJECT_DIR$/LilyAsk/sys/class/class.Question.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+        <state relative-caret-position="638">
+          <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LilyAsk/sys/class/class.Answer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LilyAsk/sys/class/class.User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="65" column="53" selection-start-line="65" selection-start-column="53" selection-end-line="65" selection-end-column="53" />
           <folding>
-            <element signature="e#266#458#0#PHP" expanded="false" />
-            <element signature="n#__construct#0;n#Comment#0;n#!!top" expanded="false" />
+            <marker date="1477187591003" expanded="true" signature="1546:1605" ph="SELECT id FR... user" />
           </folding>
         </state>
       </provider>

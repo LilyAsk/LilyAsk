@@ -30,6 +30,7 @@ class Answer extends Db
      */
     public function __construct($aid, $uid, $qid, $answer, $a_time, $agree_num, $oppose_num, $comment_num)
     {
+        parent::__construct();
         $this->aid = $aid;
         $this->uid = $uid;
         $this->qid = $qid;

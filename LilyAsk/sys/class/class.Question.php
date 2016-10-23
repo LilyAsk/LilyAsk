@@ -27,6 +27,7 @@ class Question extends Db
      */
     public function __construct($qid, $uid, $question, $q_description, $q_time, $answer_num)
     {
+        parent::__construct();
         $this->qid = $qid;
         $this->uid = $uid;
         $this->question = $question;
