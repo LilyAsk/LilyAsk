@@ -8,6 +8,7 @@
  */
 
 require_once (dirname(__FILE__).'/class.Db.php');
+require_once (dirname(__FILE__).'/ConstConservation.php');
 //require_once (dirname(dirname(__FILE__)) . '/common.php');
 
 class User extends Db
@@ -25,8 +26,6 @@ class User extends Db
 //    private $introduction;
     const LOGIN_SUCCESS = 1;
     const LOGIN_FAIL = 0;
-    // 声明表名
-    const USER_INFO = 'user_info';
 
 
     /**
@@ -46,7 +45,7 @@ class User extends Db
     public function login($uid, $password)
     {
 
-        $q = "SELECT uid FROM " . User::USER_INFO ." WHERE uid = $uid AND password = $password";
+        $q = "SELECT uid FROM " . USER_INFO ." WHERE uid = $uid AND password = $password";
 
         $result = $this->dbc->query($q);
 
@@ -75,15 +74,21 @@ class User extends Db
         // 密码通过MD5加密
         $password = md5($password);
 
-        $q = "INSERT INTO ". User::USER_INFO. " (uid, password, nickname, name) VALUES ($uid, '$password', '$nickname', '$name')";
+        if(!$this->isExist($uid)){
+            $q = "INSERT INTO ". USER_INFO. " (uid, password, nickname, name) VALUES ($uid, '$password', '$nickname', '$name')";
 
-        $result = $this->dbc->query($q);
+            $result = $this->dbc->query($q);
 
-        if ($result != 0){
-            echo 'Register succeeded.<br/>';
+            if ($result != 0){
+                echo 'Register succeeded.<br/>';
+            }else{
+                echo 'Register failed<br/>';
+            }
         }else{
-            echo 'Register failed<br/>';
+            echo 'This id is already exist.';
         }
+
+
 
     }
 
@@ -104,15 +109,22 @@ class User extends Db
     public function modify($uid, $nickname, $gender=null, $birthday="", $u_description="", $name="",
                         $email="", $phone="", $address="", $introduction="")
     {
-        $q = "UPDATE " . User::USER_INFO . " SET nickname='$nickname', u_description='$u_description', name='$name', gender=$gender,
+        $q = "UPDATE " . USER_INFO . " SET nickname='$nickname', u_description='$u_description', name='$name', gender=$gender,
                                                  birthday='$birthday', email='$email', phone='$phone', address='$address', introduction='$introduction'
               WHERE uid=$uid";
-        $result = $this->dbc->query($q);
-        if ($result != 0){
-            echo 'Modify user succeeded.<br/>';
+
+        if($this->isExist($uid)){
+            $result = $this->dbc->query($q);
+            if ($result != 0){
+                echo 'Modify user succeeded.<br/>';
+            }else{
+                echo 'Modify user failed.<br/>';
+            }
+
         }else{
-            echo 'Modify user failed.<br/>';
+            echo 'No user is found.';
         }
+
 
     }
 
@@ -124,7 +136,7 @@ class User extends Db
      */
     public function getUserById($uid)
     {
-        $q = "SELECT * FROM " . User::USER_INFO . " WHERE uid=$uid";
+        $q = "SELECT * FROM " . USER_INFO . " WHERE uid=$uid";
 
         $result = $this->dbc->query($q);
 
@@ -146,7 +158,7 @@ class User extends Db
      */
     public function getAllUsers()
     {
-        $q = "SELECT * FROM " . User::USER_INFO;
+        $q = "SELECT * FROM " . USER_INFO;
 
         $result = $this->dbc->query($q);
 
@@ -167,19 +179,25 @@ class User extends Db
 
     /**
      * 删除用户
-     * @param $id
+     * @param $uid
      */
     public function delete($uid) {
 
-        $q = "DELETE FROM " . User::USER_INFO . " WHERE uid=$uid";
+        $q = "DELETE FROM " . USER_INFO . " WHERE uid=$uid";
 
-        $result = $this->dbc->query($q);
+        if($this->isExist($uid)){
+            $result = $this->dbc->query($q);
 
-        if ($result != 0){
-            echo 'Delete user succeeded.<br/>';
+            if ($result != 0){
+                echo 'Delete user succeeded.<br/>';
+            }else{
+                echo 'Delete user failed.<br/>';
+            }
         }else{
-            echo 'Delete user failed.<br/>';
+            echo 'No user is found.';
         }
+
+
 
     }
 
@@ -191,7 +209,7 @@ class User extends Db
      */
     public function isExist($uid)
     {
-        $q = "SELECT * FROM " . User::USER_INFO . " WHERE uid=$uid";
+        $q = "SELECT * FROM " . USER_INFO . " WHERE uid=$uid";
         $result = $this->dbc->query($q);
 
         if(mysqli_num_rows($result) > 0){

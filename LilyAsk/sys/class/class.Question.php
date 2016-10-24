@@ -8,6 +8,7 @@
  */
 
 require_once (dirname(__FILE__).'/class.Db.php');
+require_once (dirname(__FILE__).'/ConstConservation.php');
 
 class Question extends Db
 {
@@ -18,7 +19,6 @@ class Question extends Db
 //    private $q_time;
 //    private $answer_num;
 
-    const QUESTION_INFO = 'question_info';
 
 
     /**
@@ -40,7 +40,7 @@ class Question extends Db
      */
     public function add($uid, $question, $q_time, $q_description="", $answer_num=0)
     {
-        $q = "INSERT INTO ". Question::QUESTION_INFO . " (uid, question, q_description, q_time, answer_num) VALUES ($uid, '$question', '$q_description', '$q_time', $answer_num)";
+        $q = "INSERT INTO ". QUESTION_INFO . " (uid, question, q_description, q_time, answer_num) VALUES ($uid, '$question', '$q_description', '$q_time', $answer_num)";
 
         $result = $this->dbc->query($q);
 
@@ -60,15 +60,21 @@ class Question extends Db
      */
     public function delete($qid)
     {
-        $q = "DELETE FROM " . Question::QUESTION_INFO . " WHERE qid=$qid";
+        $q = "DELETE FROM " . QUESTION_INFO . " WHERE qid=$qid";
 
-        $result = $this->dbc->query($q);
+        if($this->isExist($qid)){
+            $result = $this->dbc->query($q);
 
-        if ($result != 0){
-            echo 'Delete question succeeded.<br/>';
+            if ($result != 0){
+                echo 'Delete question succeeded.<br/>';
+            }else{
+                echo 'Delete question failed.<br/>';
+            }
         }else{
-            echo 'Delete question failed.<br/>';
+            echo 'No question is found.';
         }
+
+
 
 
     }
@@ -82,16 +88,23 @@ class Question extends Db
      */
     public function modify($qid, $question, $q_description)
     {
-        $q = "UPDATE " . Question::QUESTION_INFO . " SET question='$question', q_description='$q_description'                      
+        $q = "UPDATE " . QUESTION_INFO . " SET question='$question', q_description='$q_description'                      
               WHERE qid=$qid";
 
-        $result = $this->dbc->query($q);
+        if($this->isExist($qid)){
+            $result = $this->dbc->query($q);
+            echo "result : " . $result . "<br/>";
+            if ($result === TRUE){
+                echo 'Modify question succeeded.<br/>';
+            }else{
+                echo 'Modify question failed.<br/>';
+            }
 
-        if ($result != 0){
-            echo 'Modify question succeeded.<br/>';
         }else{
-            echo 'Modify question failed.<br/>';
+            echo 'No question is found.';
         }
+
+
 
     }
 
@@ -103,7 +116,7 @@ class Question extends Db
      */
     public function getQuestionById($qid)
     {
-        $q = "SELECT * FROM " . Question::QUESTION_INFO . " WHERE qid=$qid";
+        $q = "SELECT * FROM " . QUESTION_INFO . " WHERE qid=$qid";
 
         $result = $this->dbc->query($q);
 
@@ -136,7 +149,7 @@ class Question extends Db
      */
     public function getQuestionByUid($uid)
     {
-        $q = "SELECT * FROM " . Question::QUESTION_INFO . " WHERE uid=$uid";
+        $q = "SELECT * FROM " . QUESTION_INFO . " WHERE uid=$uid";
 
         $result = $this->dbc->query($q);
 
@@ -162,7 +175,7 @@ class Question extends Db
      */
     public function getAnswerNum($qid)
     {
-        $q = "SELECT * FROM " . Answer::ANSWER_INFO . " WHERE qid=$qid";
+        $q = "SELECT * FROM " . ANSWER_INFO . " WHERE qid=$qid";
         $result = $this->dbc->query($q);
         return mysqli_num_rows($result);
 
@@ -170,5 +183,36 @@ class Question extends Db
 
 
 
+    /**
+     * 判断问题是否存在
+     * @param $qid
+     * @return bool
+     */
+    public function isExist($qid)
+    {
+        $q = "SELECT * FROM " . QUESTION_INFO . " WHERE qid=$qid";
+        $result = $this->dbc->query($q);
+
+        if(mysqli_num_rows($result) > 0){
+            return true;
+        }else{
+            return false;
+        }
+
+    }
 
 }
+
+$que = new Question();
+//$que->add(12345, 'about exe', date("Y-m-d"));
+$que->getAnswerNum(1234);
+$que->getQuestionById(1);
+//$result = $que->getQuestionByUid(1234);
+//foreach ($result as $item) {
+//    foreach ($item as $item1) {
+//        echo $item1 . " ";
+//    }
+//    echo "<br/>";
+//}
+
+$que->modify(123, 'aaa', 'bbb');

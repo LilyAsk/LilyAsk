@@ -8,6 +8,7 @@
  */
 
 require_once (dirname(__FILE__).'/class.Db.php');
+require_once (dirname(__FILE__).'/ConstConservation.php');
 
 class Answer extends Db
 {
@@ -20,7 +21,7 @@ class Answer extends Db
 //    private $oppose_num;
 //    private $comment_num;
 
-    const ANSWER_INFO = 'answer_info';
+
 
 
     /**
@@ -45,15 +46,19 @@ class Answer extends Db
      */
     public function add($uid, $qid, $answer, $a_time, $agree_num=0, $oppose_num=0, $comment_num=0)
     {
-        $q = "INSERT INTO ". Answer::ANSWER_INFO . " (uid, qid, answer, a_time, agree_num, oppose_num, comment_num) VALUES ($uid, '$qid', '$answer', '$a_time', $agree_num, $oppose_num, $comment_num)";
+        $q = "INSERT INTO ". ANSWER_INFO . " (uid, qid, answer, a_time, agree_num, oppose_num, comment_num) VALUES ($uid, '$qid', '$answer', '$a_time', $agree_num, $oppose_num, $comment_num)";
 
         $result = $this->dbc->query($q);
+
+        $this->addAnswerNum($qid);
 
         if ($result != 0){
             echo 'Answer succeeded.<br/>';
         }else{
             echo 'Answer failed<br/>';
         }
+
+
 
     }
 
@@ -63,15 +68,21 @@ class Answer extends Db
      * @param $aid
      */
     public function delete($aid){
-        $q = "DELETE FROM " . Answer::ANSWER_INFO . " WHERE aid=$aid";
+        $q = "DELETE FROM " . ANSWER_INFO . " WHERE aid=$aid";
 
         $result = $this->dbc->query($q);
 
-        if ($result != 0){
-            echo 'Delete answer succeeded.<br/>';
+        if($this->isExist($aid)){
+            if ($result != 0){
+                echo 'Delete answer succeeded.<br/>';
+            }else{
+                echo 'Delete answer failed.<br/>';
+            }
         }else{
-            echo 'Delete answer failed.<br/>';
+            echo 'No answer is found.';
         }
+
+
     }
 
 
@@ -82,16 +93,23 @@ class Answer extends Db
      */
     public function modify($aid, $answer)
     {
-        $q = "UPDATE " . Answer::ANSWER_INFO . " SET answer='$answer'                   
+        $q = "UPDATE " . ANSWER_INFO . " SET answer='$answer'                   
               WHERE aid=$aid";
 
-        $result = $this->dbc->query($q);
+        if($this->isExist($aid)){
+            $result = $this->dbc->query($q);
 
-        if ($result != 0){
-            echo 'Modify question succeeded.<br/>';
+            if ($result != 0){
+                echo 'Modify question succeeded.<br/>';
+            }else{
+                echo 'Modify question failed.<br/>';
+            }
+
         }else{
-            echo 'Modify question failed.<br/>';
+            echo 'No answer is found.';
         }
+
+
 
     }
 
@@ -103,7 +121,7 @@ class Answer extends Db
      */
     public function getAnswerById($aid)
     {
-        $q = "SELECT * FROM " . Answer::ANSWER_INFO . " WHERE aid=$aid";
+        $q = "SELECT * FROM " . ANSWER_INFO . " WHERE aid=$aid";
 
         $result = $this->dbc->query($q);
 
@@ -126,7 +144,7 @@ class Answer extends Db
      */
     public function getAnswerByQid($qid)
     {
-        $q = "SELECT * FROM " . Answer::ANSWER_INFO . " WHERE qid=$qid";
+        $q = "SELECT * FROM " . ANSWER_INFO . " WHERE qid=$qid";
 
         $result = $this->dbc->query($q);
 
@@ -152,7 +170,7 @@ class Answer extends Db
      */
     public function getAnswerByUid($uid)
     {
-        $q = "SELECT * FROM " . Answer::ANSWER_INFO . " WHERE uid=$uid";
+        $q = "SELECT * FROM " . ANSWER_INFO . " WHERE uid=$uid";
 
         $result = $this->dbc->query($q);
 
@@ -183,7 +201,64 @@ class Answer extends Db
     }
 
 
+    /**
+     * 增加相应问题的回答数
+     * @param $qid
+     */
+    private function addAnswerNum($qid)
+    {
 
+        $q1 = "SELECT answer_num FROM " . QUESTION_INFO . " WHERE qid = $qid";
+
+        $result = $this->dbc->query($q1);
+        // 将获取的用户信息保存在一个一维数组内
+        $row = array();
+        if (mysqli_num_rows($result) > 0) {
+            $row = mysqli_fetch_assoc($result);
+        } else {
+            echo "getQuestion_AnswerNumById: 0 results";
+        }
+
+//        echo "row " . $row['answer_num'];
+
+        $newAnswerNum = $row['answer_num'] + 1;
+
+//        echo "newAnswerNum " . $newAnswerNum . ' <br />';
+
+        $q2 = "UPDATE " . QUESTION_INFO . " SET answer_num = $newAnswerNum                 
+              WHERE qid=$qid";
+
+        $result2 = $this->dbc->query($q2);
+
+        if ($result2 != 0){
+            echo 'Add answer num succeeded.<br/>';
+        }else{
+            echo 'Add answer num failed.<br/>';
+        }
+    }
+
+
+
+    /**
+     * 判断回答是否存在
+     * @param $aid
+     * @return bool
+     */
+    public function isExist($aid)
+    {
+        $q = "SELECT * FROM " . QUESTION_INFO . " WHERE aid=$aid";
+        $result = $this->dbc->query($q);
+
+        if(mysqli_num_rows($result) > 0){
+            return true;
+        }else{
+            return false;
+        }
+
+    }
 
 
 }
+
+$an = new Answer();
+$an->add(123, 1,'yes', date("Y-m-d"));
