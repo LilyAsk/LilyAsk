@@ -19,8 +19,6 @@ class Question extends Db
 //    private $q_time;
 //    private $answer_num;
 
-
-
     /**
      * Question constructor.
      */
