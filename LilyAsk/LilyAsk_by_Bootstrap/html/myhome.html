@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的主页</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="../css/style.css">
+    <script type="text/javascript" src="../js/js.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">LilyAsk</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a id="ques_btn" href="ask_question.html"><img src="../img/question.png">提问</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <img src="../img/account.png">User
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="myhome.html"><img src="../img/userLogo.png">我的主页</a></li>
+                        <li><a href="index.html"><img src="../img/logout.png">退出</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container myhomearea" id="myhomearea" style="display: block">
+    <div class="container">
+        <div class="col-md-3 col-sm-3"></div>
+        <div class="col-md-2 col-sm-2 labels">昵称：</div>
+        <div class="col-md-4 col-sm-4">user</div>
+        <div class="col-md-3 col-sm-3"></div>
+    </div>
+    <div class="container">
+        <div class="col-md-3 col-sm-3"></div>
+        <div class="col-md-2 col-sm-2 labels">一句话描述：</div>
+        <div class="col-md-4">我是好人，我是好人，我是好人</div>
+        <div class="col-md-3 col-sm-3"></div>
+    </div>
+    <div class="container">
+        <div class="col-md-3 col-sm-3"></div>
+        <div class="col-md-2 col-sm-2 labels">真实姓名：</div>
+        <div class="col-md-4">XXX</div>
+        <div class="col-md-3 col-sm-3"></div>
+    </div>
+    <div class="container">
+        <div class="col-md-3 col-sm-3"></div>
+        <div class="col-md-2 col-sm-2 labels">学号：</div>
+        <div class="col-md-4">1323213123213</div>
+        <div class="col-md-3 col-sm-3"></div>
+    </div>
+    <div class="container">
+        <div class="col-md-3 col-sm-3"></div>
+        <div class="col-md-2 col-sm-2 labels">性别：</div>
+        <div class="col-md-4">男</div>
+        <div class="col-md-3 col-sm-3"></div>
+    </div>
+    <div class="container">
+        <div class="col-md-3 col-sm-3"></div>
+        <div class="col-md-2 col-sm-2 labels">生日：</div>
+        <div class="col-md-4">1999-9-9</div>
+        <div class="col-md-3 col-sm-3"></div>
+    </div>
+    <div class="container">
+        <div class="col-md-3 col-sm-3"></div>
+        <div class="col-md-2 col-sm-2 labels">email：</div>
+        <div class="col-md-4">123123123@123.com</div>
+        <div class="col-md-3 col-sm-3"></div>
+    </div>
+    <div class="container">
+        <div class="col-md-3 col-sm-3"></div>
+        <div class="col-md-2 col-sm-2 labels">电话：</div>
+        <div class="col-md-4">12312345677</div>
+        <div class="col-md-3 col-sm-3"></div>
+    </div>
+    <div class="container">
+        <div class="col-md-3 col-sm-3"></div>
+        <div class="col-md-2 col-sm-2 labels">地址：</div>
+        <div class="col-md-4">南京大学大学大圩大圩</div>
+        <div class="col-md-3 col-sm-3"></div>
+    </div>
+    <div class="container">
+        <div class="col-md-3 col-sm-3"></div>
+        <div class="col-md-2 col-sm-2 labels">个人说明：</div>
+        <div class="col-md-4">好人啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</div>
+        <div class="col-md-3 col-sm-3"></div>
+    </div>
+    <div class="container">
+        <div class="col-md-7 col-sm-7"></div>
+        <div class="col-md-2 col-sm-2">
+            <button type="button" class="btn" onclick="hideInfo()">编辑</button>
+        </div>
+        <div class="col-md-3 col-sm-3"></div>
+    </div>
+</div>
+
+
+<div class="container myhomeareaedit" id="myhomeareaedit" style="display: none">
+    <div class="container">
+        <div class="col-md-2 col-sm-2"></div>
+        <div class="col-md-2 col-sm-2 labels">昵称：</div>
+        <div class="col-md-4 col-sm-4">
+            <input type="text" class="form-control">
+        </div>
+        <div class="col-md-4 col-sm-4"></div>
+    </div>
+    <div class="container">
+        <div class="col-md-2 col-sm-2"></div>
+        <div class="col-md-2 col-sm-2 labels">一句话描述：</div>
+        <div class="col-md-4">
+            <textarea type="text" class="form-control"></textarea>
+        </div>
+        <div class="col-md-4 col-sm-4"></div>
+    </div>
+    <div class="container">
+        <div class="col-md-2 col-sm-2"></div>
+        <div class="col-md-2 col-sm-2 labels">真实姓名：</div>
+        <div class="col-md-4">
+            <input type="text" class="form-control">
+        </div>
+        <div class="col-md-4 col-sm-4"></div>
+    </div>
+    <div class="container">
+        <div class="col-md-2 col-sm-2"></div>
+        <div class="col-md-2 col-sm-2 labels">学号：</div>
+        <div class="col-md-4">
+            <input type="text" class="form-control">
+        </div>
+        <div class="col-md-4 col-sm-4"></div>
+    </div>
+    <div class="container">
+        <div class="col-md-2 col-sm-2"></div>
+        <div class="col-md-2 col-sm-2 labels">性别：</div>
+        <div class="col-md-4 radio">
+            <label><input type="radio" name="optradio">男</label>
+            <span class="gap"></span>
+            <label><input type="radio" name="optradio">女</label>
+        </div>
+        <div class="col-md-4 col-sm-4"></div>
+    </div>
+    <div class="container">
+        <div class="col-md-2 col-sm-2"></div>
+        <div class="col-md-2 col-sm-2 labels">生日：</div>
+        <div class="col-md-4">
+            <input type="text" class="form-control">
+        </div>
+        <div class="col-md-4 col-sm-4"></div>
+    </div>
+    <div class="container">
+        <div class="col-md-2 col-sm-2"></div>
+        <div class="col-md-2 col-sm-2 labels">email：</div>
+        <div class="col-md-4">
+            <input type="text" class="form-control">
+        </div>
+        <div class="col-md-4 col-sm-4"></div>
+    </div>
+    <div class="container">
+        <div class="col-md-2 col-sm-2"></div>
+        <div class="col-md-2 col-sm-2 labels">电话：</div>
+        <div class="col-md-4">
+            <input type="text" class="form-control">
+        </div>
+        <div class="col-md-4 col-sm-4"></div>
+    </div>
+    <div class="container">
+        <div class="col-md-2 col-sm-2"></div>
+        <div class="col-md-2 col-sm-2 labels">地址：</div>
+        <div class="col-md-4">
+            <input type="text" class="form-control">
+        </div>
+        <div class="col-md-4 col-sm-4"></div>
+    </div>
+    <div class="container">
+        <div class="col-md-2 col-sm-2"></div>
+        <div class="col-md-2 col-sm-2 labels">个人说明：</div>
+        <div class="col-md-4">
+            <textarea type="text" class="form-control"></textarea>
+        </div>
+        <div class="col-md-4 col-sm-4"></div>
+    </div>
+    <div class="container">
+        <div class="col-md-7 col-sm-7"></div>
+        <div class="col-md-2 col-sm-2">
+            <button type="button" class="btn" onclick="showInfo()">保存</button>
+        </div>
+        <div class="col-md-3 col-sm-3"></div>
+    </div>
+</div>
+
+</body>
+</html>

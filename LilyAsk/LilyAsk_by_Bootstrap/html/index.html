@@ -31,8 +31,8 @@
 </div>
 
 
-<div id="loginState" class="container">
-    <form class="form-inline">
+<form id="loginState" class="container">
+    <div class="form-inline">
         <div class="form-group">
             <label class="col-md-4 col-sm-4 col-xm-2" for="username">昵称：</label>
             <input class="col-md-7 col-sm-7 col-xm-4" type="text" class="form-control" id="username">
@@ -40,9 +40,9 @@
                 <img src="../img/blank.png">
             </div>
         </div>
-    </form>
+    </div>
 
-    <form class="form-inline cannotsee_password" id="log_notsee">
+    <div class="form-inline cannotsee_password" id="log_notsee">
         <div class="form-group">
             <label class="col-md-4 col-sm-4 col-xm-2">密码：</label>
             <input class="col-md-7 col-sm-7 col-xm-4" type="password" class="form-control password" id="log_notsee_password">
@@ -50,9 +50,9 @@
                 <img onclick="canseelog()" class="cannotsee" src="../img/cansee.png">
             </div>
         </div>
-    </form>
+    </div>
 
-    <form class="form-inline cansee_password" id="log_see">
+    <div class="form-inline cansee_password" id="log_see">
         <div class="form-group">
             <label class="col-md-4 col-sm-4 col-xm-2">密码：</label>
             <input class="col-md-7 col-sm-7 col-xm-4" type="text" class="form-control see_password" id="log_see_password">
@@ -60,15 +60,15 @@
                 <img onclick="cannotseelog()" class="canaee" src="../img/cannotsee.png">
             </div>
         </div>
-    </form>
+    </div>
 
-    <button type="button" class="btn btn-primary">登录</button>
+    <button type="submit" class="btn btn-primary">登录</button>
     <a href="question_list.html" class="btn btn-link">以游客身份登录</a>
-</div>
+</form>
 
 
-<div id="registerState" class="container">
-    <form class="form-inline">
+<form id="registerState" class="container">
+    <div class="form-inline">
         <div class="form-group">
             <label class="col-md-4" for="username">昵称：</label>
             <input class="col-md-7" type="text" class="form-control" id="admin">
@@ -76,9 +76,9 @@
                 <img src="../img/blank.png">
             </div>
         </div>
-    </form>
+    </div>
 
-    <form class="form-inline">
+    <div class="form-inline">
         <div class="form-group">
             <label class="col-md-4">姓名：</label>
             <input class="col-md-7" type="text" class="form-control" id="name">
@@ -86,9 +86,9 @@
                 <img src="../img/blank.png">
             </div>
         </div>
-    </form>
+    </div>
 
-    <form class="form-inline">
+    <div class="form-inline">
         <div class="form-group">
             <label class="col-md-4">学号：</label>
             <input class="col-md-7" type="text" class="form-control" id="id">
@@ -96,9 +96,9 @@
                 <img src="../img/blank.png">
             </div>
         </div>
-    </form>
+    </div>
 
-    <form class="form-inline cannotsee_password" id="reg_notsee">
+    <div class="form-inline cannotsee_password" id="reg_notsee">
         <div class="form-group">
             <label class="col-md-4">密码：</label>
             <input class="col-md-7" type="password" class="form-control password" id="reg_notsee_password">
@@ -106,9 +106,9 @@
                 <img onclick="canseereg()" class="cannotsee" src="../img/cansee.png">
             </div>
         </div>
-    </form>
+    </div>
 
-    <form class="form-inline cansee_password" id="reg_see">
+    <div class="form-inline cansee_password" id="reg_see">
         <div class="form-group">
             <label class="col-md-4">密码：</label>
             <input class="col-md-7" type="text" class="form-control see_password" id="reg_see_password">
@@ -116,10 +116,10 @@
                 <img onclick="cannotseereg()" class="canaee" src="../img/cannotsee.png">
             </div>
         </div>
-    </form>
+    </div>
 
-    <button type="button" class="btn btn-primary">注册</button>
-</div>
+    <button type="submit" class="btn btn-primary">注册</button>
+</form>
 
 </body>
 </html>

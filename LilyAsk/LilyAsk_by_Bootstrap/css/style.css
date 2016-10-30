@@ -9,6 +9,12 @@ hr {
     border-top: 1px solid #bbb;
     border-bottom: 1px solid #fff;
 }
+
+.form-inline {
+    margin-bottom: 30px;
+}
+
+
 input[type="text"]:focus {
     border-color: #53e3a6 !important;
     outline: medium;
@@ -301,4 +307,40 @@ button {
 }
 #comment_area label {
     margin-right: 20px;
+}
+
+
+
+
+
+.myhomearea,.myhomeareaedit{
+    margin-top: 200px;
+    font-size: larger;
+    margin-bottom: 200px;
+}
+.myhomearea .container {
+    margin-bottom: 30px;
+}
+.myhomeareaedit .container {
+    margin-bottom: 30px;
+}
+.myhomearea button {
+    background-color: #53e3a6;
+    color: white;
+}
+.myhomeareaedit button {
+    background-color: #53e3a6;
+    color: white;
+}
+.labels {
+    font-weight: bolder;
+    text-align: center;
+}
+.myhomeareaedit input {
+    border-style: solid;
+    border-radius: 9px;
+}
+.myhomeareaedit textarea {
+    resize: none;
+    height: 140px;
 }

@@ -31,6 +31,7 @@ function canseelog() {
     show.style.display = "none";
     hide.style.display = "block";
     text.value = password.value;
+    password.value = "";
 }
 
 function cannotseelog() {
@@ -41,6 +42,7 @@ function cannotseelog() {
     show.style.display = "none";
     hide.style.display = "block";
     password.value = text.value;
+    text.value = "";
 }
 
 function canseereg() {
@@ -51,6 +53,7 @@ function canseereg() {
     show.style.display = "none";
     hide.style.display = "block";
     text.value = password.value;
+    password.value = "";
 }
 
 function cannotseereg() {
@@ -61,4 +64,20 @@ function cannotseereg() {
     show.style.display = "none";
     hide.style.display = "block";
     password.value = text.value;
+    text.value = "";
+}
+
+
+function showInfo() {
+    var hide = document.getElementById("myhomeareaedit")
+    var show = document.getElementById("myhomearea");
+    hide.style.display = "none";
+    show.style.display = "block";
+}
+
+function hideInfo() {
+    var show = document.getElementById("myhomeareaedit");
+    var hide = document.getElementById("myhomearea");
+    hide.style.display = "none";
+    show.style.display = "block";
 }
