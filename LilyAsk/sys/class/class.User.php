@@ -45,7 +45,9 @@ class User extends Db
     public function login($uid, $password)
     {
 
-        $q = "SELECT uid FROM " . USER_INFO ." WHERE uid = $uid AND password = $password";
+        echo $password . '<br/>';
+
+        $q = "SELECT uid FROM " . USER_INFO ." WHERE uid = $uid AND password = '$password'";
 
         $result = $this->dbc->query($q);
 
@@ -53,8 +55,15 @@ class User extends Db
             return User::LOGIN_FAIL;
 
         // 获取一个用户
-        $result = $result[0];
-        echo 'The user found is '. $result;
+        $row = array();
+        if (mysqli_num_rows($result) > 0) {
+            $row = mysqli_fetch_array($result);
+            echo 'Login success. <br/>';
+        } else {
+            echo "login: 0 results";
+        }
+
+//        echo 'The user found is '. $row[0] . " ";
 
         return User::LOGIN_SUCCESS;
 
@@ -67,12 +76,16 @@ class User extends Db
      * @param $password
      * @param $nickname
      * @param $name
+     * @return bool|int|mysqli_result
      */
     public function add($uid, $password, $nickname, $name)
     {
 
         // 密码通过MD5加密
-        $password = md5($password);
+//        $password = md5($password);
+        echo $password . '<br/>';
+
+        $result = 0;
 
         if(!$this->isExist($uid)){
             $q = "INSERT INTO ". USER_INFO. " (uid, password, nickname, name) VALUES ($uid, '$password', '$nickname', '$name')";
@@ -84,11 +97,13 @@ class User extends Db
             }else{
                 echo 'Register failed<br/>';
             }
+
+
         }else{
             echo 'This id is already exist.';
         }
 
-
+        return $result;
 
     }
 
@@ -226,8 +241,10 @@ class User extends Db
 
 
 // 用于测试
-$userr = new User();
-$userr->add(1234, '123', 'Hiki', 'Guo');
+//$userr = new User();
+//$userr->add(123456722, '1234', 'Hiki', 'Guo');
+//$result = $userr->login(123456, '1234');
+//echo $result;
 //$userr->modify(12345, 'hiki', true, date("Y-m-d"), 'Iam hiki', 'haobin', 'guohaobin', '123', 'baita', 'Innanjing');
 //$userr->modify(123, 'hiki');
 //$arr =  $userr->getUserById(123);
@@ -235,14 +252,14 @@ $userr->add(1234, '123', 'Hiki', 'Guo');
 //    echo $item . " ";
 //}
 //echo "<br/>";
-$result = $userr->getAllUsers();
-
-foreach ($result as $item){
-    foreach ($item as $tem) {
-        echo $tem . " ";
-    }
-    echo '<br/>';
-}
+//$result = $userr->getAllUsers();
+//
+//foreach ($result as $item){
+//    foreach ($item as $tem) {
+//        echo $tem . " ";
+//    }
+//    echo '<br/>';
+//}
 
 //$exist = $userr->isExist(123);
 //echo $exist;
