@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a9ae7dd-795f-45e1-b4e1-e36a89aa56ab" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LilyAsk/sys/common.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LilyAsk/LilyAsk_by_Bootstrap/html/index.html" afterPath="$PROJECT_DIR$/LilyAsk/LilyAsk_by_Bootstrap/html/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LilyAsk/sys/class/class.Question.php" afterPath="$PROJECT_DIR$/LilyAsk/sys/class/class.Question.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/LilyAsk/front/admin/login.php" afterPath="$PROJECT_DIR$/LilyAsk/LilyAsk_by_Bootstrap/admin/login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LilyAsk/.idea/workspace.xml" afterPath="$PROJECT_DIR$/LilyAsk/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LilyAsk/LilyAsk_by_Bootstrap/html/ask_question.html" afterPath="$PROJECT_DIR$/LilyAsk/LilyAsk_by_Bootstrap/html/ask_question.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LilyAsk/LilyAsk_by_Bootstrap/html/myhome.html" afterPath="$PROJECT_DIR$/LilyAsk/LilyAsk_by_Bootstrap/html/myhome.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LilyAsk/LilyAsk_by_Bootstrap/html/question_detail.html" afterPath="$PROJECT_DIR$/LilyAsk/LilyAsk_by_Bootstrap/html/question_detail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LilyAsk/LilyAsk_by_Bootstrap/html/question_list.html" afterPath="$PROJECT_DIR$/LilyAsk/LilyAsk_by_Bootstrap/html/question_list.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/LilyAsk/LilyAsk_by_Bootstrap/html/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="LilyAsk.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,113 +38,7 @@
     <favorites_list name="LilyAsk" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="class.Question.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LilyAsk/sys/class/class.Question.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-              <folding>
-                <element signature="n#getQuestionByTitle#0;n#Question#0;n#!!top" expanded="false" />
-                <marker date="1477289165322" expanded="true" signature="760:912" ph="INSERT INTO ${QUESTION_INFO}... " />
-                <marker date="1477289165322" expanded="true" signature="1224:1268" ph="DELETE FROM " />
-                <marker date="1477289165322" expanded="true" signature="2464:2510" ph="SELECT * FRO... ${QUESTION_INFO}" />
-                <marker date="1477289165322" expanded="true" signature="3084:3130" ph="SELECT * FRO... ${QUESTION_INFO}" />
-                <marker date="1477289165322" expanded="true" signature="3635:3679" ph="SELECT * FRO... ${ANSWER_INFO}" />
-                <marker date="1477289165322" expanded="true" signature="3903:3949" ph="SELECT * FRO... ${QUESTION_INFO}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LilyAsk/LilyAsk_by_Bootstrap/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LilyAsk/LilyAsk_by_Bootstrap/admin/login.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="616">
-              <caret line="33" column="2" selection-start-line="33" selection-start-column="2" selection-end-line="33" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ask_question.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LilyAsk/LilyAsk_by_Bootstrap/html/ask_question.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/LilyAsk/LilyAsk_by_Bootstrap/html/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="class.User.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LilyAsk/sys/class/class.User.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
-              <folding>
-                <marker date="1477273776899" expanded="true" signature="873:938" ph="SELECT uid F... ${USER_INFO}" />
-                <marker date="1477273776899" expanded="true" signature="1486:1594" ph="INSERT INTO ${USER_INFO}... " />
-                <marker date="1477273776899" expanded="true" signature="3149:3191" ph="SELECT * FRO... ${USER_INFO}" />
-                <marker date="1477273776899" expanded="true" signature="3594:3608" ph="SELECT * FRO... ${USER_INFO}" />
-                <marker date="1477273776899" expanded="true" signature="4078:4118" ph="DELETE FROM " />
-                <marker date="1477273776899" expanded="true" signature="4570:4612" ph="SELECT * FRO... ${USER_INFO}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Smarty.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LilyAsk/sys/smarty/Smarty.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2244">
-              <caret line="131" column="0" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SmartyBC.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LilyAsk/sys/smarty/SmartyBC.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="debug.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LilyAsk/sys/smarty/debug.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -183,9 +78,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1932" />
+    <option name="x" value="68" />
+    <option name="y" value="38" />
+    <option name="width" value="1843" />
     <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -213,8 +108,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -230,7 +125,7 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="LilyAsk" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -240,15 +135,11 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="LilyAsk" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="LilyAsk" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sys" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -258,37 +149,15 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="LilyAsk" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="LilyAsk" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sys" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="class" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LilyAsk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LilyAsk" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LilyAsk" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="LilyAsk_by_Bootstrap" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -298,55 +167,19 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="LilyAsk" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="LilyAsk" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="LilyAsk_by_Bootstrap" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="html" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LilyAsk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LilyAsk" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LilyAsk" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LilyAsk_by_Bootstrap" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LilyAsk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LilyAsk" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LilyAsk" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -356,31 +189,39 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../learning_php" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\GitHub\LilyAsk" />
       <recent name="D:\wamp\www\LilyAsk\LilyAsk\LilyAsk_by_Bootstrap" />
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
     <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
       <method />
     </configuration>
-    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-      <TestRunner />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
-      <BehatRunner />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
@@ -436,11 +277,12 @@
       <workItem from="1477289119969" duration="45000" />
       <workItem from="1477658426459" duration="2577000" />
       <workItem from="1477672839784" duration="613000" />
+      <workItem from="1481808471503" duration="27000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27448000" />
+    <option name="totallyTimeSpent" value="27475000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -452,13 +294,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1932" height="1048" extended-state="1" />
-    <editor active="true" />
+    <frame x="68" y="38" width="1843" height="1048" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15913978" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15859766" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -471,6 +312,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -524,19 +366,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
-          <folding>
-            <element signature="n#__construct#0;n#Comment#0;n#!!top" expanded="false" />
-            <element signature="n#add#0;n#Comment#0;n#!!top" expanded="false" />
-            <element signature="n#delete#0;n#Comment#0;n#!!top" expanded="false" />
-            <element signature="n#getCommentById#0;n#Comment#0;n#!!top" expanded="false" />
-            <element signature="n#getCommentByAid#0;n#Comment#0;n#!!top" expanded="false" />
-            <marker date="1477273389227" expanded="true" signature="813:974" ph="INSERT INTO ${COMMENT_INFO}... " />
-            <marker date="1477273389227" expanded="true" signature="1301:1344" ph="DELETE FROM " />
-            <marker date="1477273389227" expanded="true" signature="1686:1731" ph="SELECT * FRO... ${COMMENT_INFO}" />
-            <marker date="1477273389227" expanded="true" signature="2161:2206" ph="SELECT * FRO... ${COMMENT_INFO}" />
-            <marker date="1477273389227" expanded="true" signature="2690:2746" ph="SELECT comme... ${ANSWER_INFO}" />
-            <marker date="1477273389227" expanded="true" signature="3650:3695" ph="SELECT * FRO... ${COMMENT_INFO}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -544,7 +373,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="704">
           <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -559,15 +387,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-          <folding>
-            <element signature="n#getQuestionByTitle#0;n#Question#0;n#!!top" expanded="false" />
-            <marker date="1477289165322" expanded="true" signature="760:912" ph="INSERT INTO ${QUESTION_INFO}... " />
-            <marker date="1477289165322" expanded="true" signature="1224:1268" ph="DELETE FROM " />
-            <marker date="1477289165322" expanded="true" signature="2464:2510" ph="SELECT * FRO... ${QUESTION_INFO}" />
-            <marker date="1477289165322" expanded="true" signature="3084:3130" ph="SELECT * FRO... ${QUESTION_INFO}" />
-            <marker date="1477289165322" expanded="true" signature="3635:3679" ph="SELECT * FRO... ${ANSWER_INFO}" />
-            <marker date="1477289165322" expanded="true" signature="3903:3949" ph="SELECT * FRO... ${QUESTION_INFO}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -575,13 +395,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-          <folding>
-            <element signature="n#delete#0;n#Answer#0;n#!!top" expanded="false" />
-            <element signature="n#modify#0;n#Answer#0;n#!!top" expanded="false" />
-            <element signature="n#getAnswerById#0;n#Answer#0;n#!!top" expanded="false" />
-            <element signature="n#getAnswerByUid#0;n#Answer#0;n#!!top" expanded="false" />
-            <element signature="n#getCommentNum#0;n#Answer#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -589,19 +402,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-          <folding>
-            <element signature="n#__construct#0;n#Comment#0;n#!!top" expanded="false" />
-            <element signature="n#add#0;n#Comment#0;n#!!top" expanded="false" />
-            <element signature="n#delete#0;n#Comment#0;n#!!top" expanded="false" />
-            <element signature="n#getCommentById#0;n#Comment#0;n#!!top" expanded="false" />
-            <element signature="n#getCommentByAid#0;n#Comment#0;n#!!top" expanded="false" />
-            <marker date="1477273389227" expanded="true" signature="813:974" ph="INSERT INTO ${COMMENT_INFO}... " />
-            <marker date="1477273389227" expanded="true" signature="1301:1344" ph="DELETE FROM " />
-            <marker date="1477273389227" expanded="true" signature="1686:1731" ph="SELECT * FRO... ${COMMENT_INFO}" />
-            <marker date="1477273389227" expanded="true" signature="2161:2206" ph="SELECT * FRO... ${COMMENT_INFO}" />
-            <marker date="1477273389227" expanded="true" signature="2690:2746" ph="SELECT comme... ${ANSWER_INFO}" />
-            <marker date="1477273389227" expanded="true" signature="3650:3695" ph="SELECT * FRO... ${COMMENT_INFO}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -609,7 +409,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -631,7 +430,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -679,27 +477,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LilyAsk/sys/db/user_basic_info.sql" />
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_9.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="722" column="30" selection-start-line="722" selection-start-column="26" selection-end-line="722" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_8.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="613">
-          <caret line="1056" column="9" selection-start-line="1056" selection-start-column="9" selection-end-line="1056" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-311">
-          <caret line="872" column="9" selection-start-line="872" selection-start-column="9" selection-end-line="872" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_9.php" />
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_8.php" />
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_1.php" />
     <entry file="file://$PROJECT_DIR$/LilyAsk/sys/db/question_info.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -711,7 +491,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="946">
           <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -740,13 +519,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1892">
           <caret line="142" column="20" selection-start-line="142" selection-start-column="20" selection-end-line="142" selection-end-column="20" />
-          <folding>
-            <element signature="n#delete#0;n#Answer#0;n#!!top" expanded="false" />
-            <element signature="n#modify#0;n#Answer#0;n#!!top" expanded="false" />
-            <element signature="n#getAnswerById#0;n#Answer#0;n#!!top" expanded="false" />
-            <element signature="n#getAnswerByUid#0;n#Answer#0;n#!!top" expanded="false" />
-            <element signature="n#getCommentNum#0;n#Answer#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -754,42 +526,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="616">
           <caret line="65" column="32" selection-start-line="65" selection-start-column="32" selection-end-line="65" selection-end-column="32" />
-          <folding>
-            <element signature="n#__construct#0;n#Comment#0;n#!!top" expanded="false" />
-            <element signature="n#add#0;n#Comment#0;n#!!top" expanded="false" />
-            <element signature="n#delete#0;n#Comment#0;n#!!top" expanded="false" />
-            <element signature="n#getCommentById#0;n#Comment#0;n#!!top" expanded="false" />
-            <element signature="n#getCommentByAid#0;n#Comment#0;n#!!top" expanded="false" />
-            <marker date="1477273389227" expanded="true" signature="813:974" ph="INSERT INTO ${COMMENT_INFO}... " />
-            <marker date="1477273389227" expanded="true" signature="1301:1344" ph="DELETE FROM " />
-            <marker date="1477273389227" expanded="true" signature="1686:1731" ph="SELECT * FRO... ${COMMENT_INFO}" />
-            <marker date="1477273389227" expanded="true" signature="2161:2206" ph="SELECT * FRO... ${COMMENT_INFO}" />
-            <marker date="1477273389227" expanded="true" signature="2690:2746" ph="SELECT comme... ${ANSWER_INFO}" />
-            <marker date="1477273389227" expanded="true" signature="3650:3695" ph="SELECT * FRO... ${COMMENT_INFO}" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LilyAsk/sys/class/class.Question.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
+        <state relative-caret-position="375">
           <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-          <folding>
-            <element signature="n#getQuestionByTitle#0;n#Question#0;n#!!top" expanded="false" />
-            <marker date="1477289165322" expanded="true" signature="760:912" ph="INSERT INTO ${QUESTION_INFO}... " />
-            <marker date="1477289165322" expanded="true" signature="1224:1268" ph="DELETE FROM " />
-            <marker date="1477289165322" expanded="true" signature="2464:2510" ph="SELECT * FRO... ${QUESTION_INFO}" />
-            <marker date="1477289165322" expanded="true" signature="3084:3130" ph="SELECT * FRO... ${QUESTION_INFO}" />
-            <marker date="1477289165322" expanded="true" signature="3635:3679" ph="SELECT * FRO... ${ANSWER_INFO}" />
-            <marker date="1477289165322" expanded="true" signature="3903:3949" ph="SELECT * FRO... ${QUESTION_INFO}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LilyAsk/LilyAsk_by_Bootstrap/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+        <state relative-caret-position="300">
+          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -813,7 +564,7 @@
     <entry file="file://$PROJECT_DIR$/LilyAsk/sys/common.php" />
     <entry file="file://$PROJECT_DIR$/LilyAsk/sys/smarty/Smarty.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2244">
+        <state relative-caret-position="3275">
           <caret line="131" column="0" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
           <folding />
         </state>
@@ -829,28 +580,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/LilyAsk/sys/class/class.User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
+        <state relative-caret-position="625">
           <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
-          <folding>
-            <marker date="1477273776899" expanded="true" signature="873:938" ph="SELECT uid F... ${USER_INFO}" />
-            <marker date="1477273776899" expanded="true" signature="1486:1594" ph="INSERT INTO ${USER_INFO}... " />
-            <marker date="1477273776899" expanded="true" signature="3149:3191" ph="SELECT * FRO... ${USER_INFO}" />
-            <marker date="1477273776899" expanded="true" signature="3594:3608" ph="SELECT * FRO... ${USER_INFO}" />
-            <marker date="1477273776899" expanded="true" signature="4078:4118" ph="DELETE FROM " />
-            <marker date="1477273776899" expanded="true" signature="4570:4612" ph="SELECT * FRO... ${USER_INFO}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LilyAsk/LilyAsk_by_Bootstrap/admin/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="33" column="2" selection-start-line="33" selection-start-column="2" selection-end-line="33" selection-end-column="2" />
+        <state relative-caret-position="825">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LilyAsk/LilyAsk_by_Bootstrap/html/index.html">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="436">
           <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
